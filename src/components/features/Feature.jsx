@@ -29,18 +29,18 @@ const Feature = ({
   };
   return (
     <div
-      className={`lg:grid lg:grid-cols-2 flex flex-col gap-4 justify-center items-center text-start rounded-3xl p-4 lg:p-12  shadow-[inset_0_0_50px_oklch(var(--nc)),0_0_50px_oklch(var(--nc))] ${getGradient()} ${
-        reverse ? "lg:rounded-[75%_25%/20%]" : "lg:rounded-[25%_75%/20%]"
-      } ${reverse ? "lg:flex-row" : "lg:flex-row-reverse"} `}
+      className={`xl:grid xl:grid-cols-2 flex flex-col gap-4 justify-center items-center text-start rounded-3xl p-4 xl:p-12  shadow-[inset_0_0_50px_oklch(var(--nc)),0_0_50px_oklch(var(--nc))] ${getGradient()} ${
+        reverse ? "xl:rounded-[75%_25%/20%]" : "xl:rounded-[25%_75%/20%]"
+      } ${reverse ? "xl:flex-row" : "xl:flex-row-reverse"} `}
     >
       <div
         className={`flex flex-col gap-4 w-full items-center ${
-          reverse ? "lg:items-end lg:order-1" : "lg:items-start lg:order-2"
+          reverse ? "xl:items-end xl:order-1" : "xl:items-start xl:order-2"
         }`}
       >
         <GradientTitle title={title} />
         <div
-          className={`flex bg-[radial-gradient(ellipse_at_center,_rgba(255,255,255,0)_0%,_rgba(255,255,255,1)_70%,_rgba(255,255,255,1)_100%);] w-3/4 lg:w-full shadow-[inset_0_0_50px_oklch(var(--nc)),0_0_50px_oklch(var(--nc))] ${
+          className={`flex bg-[radial-gradient(ellipse_at_center,_rgba(255,255,255,0)_0%,_rgba(255,255,255,1)_70%,_rgba(255,255,255,1)_100%);] w-3/4 xl:w-full shadow-[inset_0_0_50px_oklch(var(--nc)),0_0_50px_oklch(var(--nc))] ${
             reverse ? "rounded-[75%_25%/20%]" : "rounded-[25%_75%/20%]"
           }`}
         >
@@ -53,7 +53,7 @@ const Feature = ({
           />
         </div>
       </div>
-      <div className={`text-center ${reverse ? "lg:text-end lg:order-2" : "lg:text-start lg:order-1"}`}>
+      <div className={`text-center ${reverse ? "xl:text-end xl:order-2" : "xl:text-start xl:order-1"}`}>
         <GradientTitle title={subTitle} />
         <p className="text-xl pt-8">{description}</p>
       </div>

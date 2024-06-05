@@ -7,8 +7,8 @@ const PortFolio = () => {
   return(
     <SectionWrapper>
       <div className="flex flex-col gap-4 justify-center items-center mb-16">
-        <SectionBadge title="Portfolio" />
-        <GradientTitle title="We have built some of our ideas, let us build some of yours" />
+        <SectionBadge title="Challenges" />
+        <GradientTitle title="Here is a small taste of potential challenges" />
       </div>
       <ProjectCarousel />
     </SectionWrapper>

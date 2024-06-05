@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import RBIIcon from "./icons/RBIIcon";
 import RBIFullIcon from "./icons/RBIFullIcon";
+import CipherLogoIcon from "./icons/CipherLogoIcon";
 
 const MenuOptions = () => {
   const handleMenuItemClick = (e) => {
@@ -33,7 +34,7 @@ const MenuOptions = () => {
           Home
         </Link>
       </li>
-      <li>
+      {/* <li>
         <details>
           <summary onClick={handleNewMenuClick}>Services</summary>
           <ul className="p-2">
@@ -49,17 +50,17 @@ const MenuOptions = () => {
             </li>
           </ul>
         </details>
-      </li>
+      </li> */}
       <li>
         <Link to={"/portfolio"} onClick={handleMenuItemClick}>
-          Portfolio
+          Challenges
         </Link>
       </li>
-      <li>
+      {/* <li>
         <Link to={"/aboutus"} onClick={handleMenuItemClick}>
           About Us
         </Link>
-      </li>
+      </li> */}
       <li>
         <Link to={"/contactus"} onClick={handleMenuItemClick}>
           Contact
@@ -102,13 +103,13 @@ const Header = () => {
       <div className="navbar-start">
         <Link
           to={"/"}
-          className="btn btn-ghost lg:h-16 lg:w-68 text-primary z-[1]"
+          className="btn btn-ghost xl:h-14 xl:w-68 text-primary z-[1]"
           onClick={handleLogoClick}
         >
-          <RBIFullIcon />
+          <CipherLogoIcon />
         </Link>
       </div>
-      <div className="navbar-center hidden lg:flex">
+      <div className="navbar-center hidden xl:flex">
         <ul className="menu menu-horizontal px-1 z-[2] text-lg">
           <MenuOptions />
         </ul>
@@ -120,7 +121,7 @@ const Header = () => {
         <div
           tabIndex={0}
           role="button"
-          className={`btn btn-ghost lg:hidden swap ${
+          className={`btn btn-ghost xl:hidden swap ${
             openDropdown && "swap-active"
           }`}
         >
@@ -150,7 +151,7 @@ const Header = () => {
         </div>
         <ul
           tabIndex={0}
-          className="menu menu-md dropdown-content mt-3 z-[2] p-2 shadow bg-base-100 rounded-box w-52 -translate-x-3/4 lg:-translate-x-full"
+          className="menu menu-md dropdown-content mt-3 z-[2] p-2 shadow bg-base-100 rounded-box w-52 -translate-x-3/4 xl:-translate-x-full"
         >
           <MenuOptions />
         </ul>

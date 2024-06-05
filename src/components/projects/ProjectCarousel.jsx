@@ -1,4 +1,4 @@
-import FlaskIcon from "../icons/FlaskIcon";
+import MazeIcon from "../icons/MazeIcon";
 import Project from "./Project";
 import projectData from "../../data/projects";
 
@@ -12,18 +12,24 @@ const ProjectCarousel = () => {
     //const carousel = document.querySelector('.carousel')
     // const carousel = btn.parentElement!.parentElement!.parentElement!
     const carousel = document.querySelector('#imageCarousel')
-
+    let vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+    console.log("vw: " + vw);
     const href = btn.getAttribute('href')
     const target = carousel.querySelector(href)
     console.log(target);
     const left = target.offsetLeft
     console.log(left);
-    carousel.scrollTo({ left: left - carousel.offsetWidth, behavior: 'smooth' })
+    if (vw <= 1024) {
+      carousel.scrollTo({ left: left, behavior: 'smooth' })
+
+    } else {
+      carousel.scrollTo({ left: left - carousel.offsetWidth / 2, behavior: 'smooth' })
+    }
   }
 
   return (
-    <div className="flex flex-col-reverse lg:grid lg:grid-cols-4 justify-center gap-4">
-      <div className="flex flex-col w-full py-2 gap-2 col-span-1 max-h-72 lg:max-h-96 overflow-y-auto">
+    <div className="flex flex-col-reverse xl:grid xl:grid-cols-4 justify-center gap-4">
+      <div className="flex flex-col w-full p-4 gap-2 col-span-1 max-h-72 xl:max-h-96 overflow-y-auto">
         {projectData.map((project, index) => {
           return (
             <a
@@ -32,11 +38,11 @@ const ProjectCarousel = () => {
               className="btn btn-lg"
               onClick={goTo}
             >
-              <div className="grid grid-cols-8">
-                <div className="col-span-1">
+              <div style={{containerType: "inline-size"}} className="flex gap-2 items-center justify-center xl:justify-start w-full">
+                <div className="min-h-8 min-w-8 max-h-8 max-w-8 xl:h-14 xl:w-14 hidden xl:block">
                   {project.logo}
                 </div>
-                <span className="text-lg font-bold lg:text-start col-span-7 text-balance ml-4">{project.name}</span>
+                <span className="text-[6cqi] font-bold xl:text-start col-span-7 text-balance">{project.name}</span>
               </div>
             </a>
           );

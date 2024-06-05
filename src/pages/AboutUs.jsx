@@ -4,8 +4,8 @@ import SectionWrapper from "../components/shared/SectionWrapper";
 const AboutUs = () => {
   return (
     <SectionWrapper additionalClasses="bg-neutral bg-opacity-60">
-      <div className="grid grid-cols-1 lg:grid-cols-4 text-start">
-        <div className="row-start-2 text-end lg:-mr-1 lg:pr-4 lg:border-r-4 lg:border-neutral-content">
+      <div className="grid grid-cols-1 xl:grid-cols-4 text-start">
+        <div className="row-start-2 text-end xl:-mr-1 xl:pr-4 xl:border-r-4 xl:border-neutral-content">
           <GradientTitle title="About Us" />
           <p className="text-lg  my-8 text-neutral-content">
             RobotBuildersInc is more than just a software development company;
@@ -17,7 +17,7 @@ const AboutUs = () => {
             committed to your rapid iteration towards a shared success.
           </p>
         </div>
-        <div className="flex flex-col gap-8 col-start-2 col-span-3 lg:pl-4 lg:border-l-4 lg:border-neutral-content">
+        <div className="flex flex-col gap-8 col-start-2 col-span-3 xl:pl-4 xl:border-l-4 xl:border-neutral-content">
           <GradientTitle title="Why Choose RobotBuildersInc?" />
           <p className="text-lg">
             At RobotBuildersInc, we're not just another software development

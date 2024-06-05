@@ -3,17 +3,17 @@ const GradientTitle = ({ title, additionalClasses = "", textSize, fontWeight }) 
     if (textSize === "sm") {
       return "text-2xl";
     } else if (textSize === "md") {
-      return "lg:text-4xl";
+      return "xl:text-4xl";
     } else if (textSize === "lg") {
-      return "lg:text-5xl";
+      return "xl:text-5xl";
     } else if (textSize === "xl") {
-      return "lg:text-7xl";
+      return "xl:text-7xl";
     } else if (textSize === "2xl") {
-      return "lg:text-8xl";
+      return "xl:text-8xl";
     } else if (textSize === "3xl") {
-      return "lg:text-9xl";
+      return "xl:text-9xl";
     }
-    return "lg:text-6xl";
+    return "xl:text-6xl";
   }
 
   const getFontWeight = () => {

@@ -5,8 +5,8 @@ const Hero = () => {
   <div className="hero min-h-screen">
     <div className="hero-overlay bg-opacity-60"></div>
     <div className="hero-content text-neutral-content w-full py-16">
-      <div className="flex flex-col lg:flex-row w-full gap-8">
-        <div className="max-w-md flex flex-col items-center text-center mx-auto lg:items-start lg:text-start justify-center gap-4">
+      <div className="flex flex-col xl:flex-row w-full gap-8">
+        <div className="max-w-md flex flex-col items-center text-center mx-auto xl:items-start xl:text-start justify-center gap-4">
           <div className="badge badge-lg h-12 badge-outline p-4 rounded-lg font-semibold">Code Crusaders</div>
           <GradientTitle title="Decipher the past, forge the future" />
           <p className="mb-5">Cryptic clues, clever codes, and brain-twisting puzzles await! Join our challenge and test your skills as a master codebreaker.</p>

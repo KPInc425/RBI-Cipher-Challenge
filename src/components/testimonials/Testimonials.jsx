@@ -1,7 +1,7 @@
 import GradientTitle from "../shared/GradientTitle";
 import SectionBadge from "../shared/SectionBadge";
 import SectionWrapper from "../shared/SectionWrapper";
-import FlaskIcon from "../icons/FlaskIcon";
+import MazeIcon from "../icons/MazeIcon";
 import Testimonial from "./Testimonial";
 
 const Tesitmonials = () => {
@@ -18,7 +18,7 @@ const Tesitmonials = () => {
       <div className="carousel w-full">
         <div id="item1" className="carousel-item w-full">
           <Testimonial
-          companyLogo={<FlaskIcon />}
+          companyLogo={<MazeIcon />}
           companyName="Company Name #1"
           testimonial="Working with [Your Company Name] was a game-changer for our
               business. They took the time to understand our unique needs and
@@ -34,7 +34,7 @@ const Tesitmonials = () => {
         </div>
         <div id="item2" className="carousel-item w-full">
           <Testimonial
-          companyLogo={<FlaskIcon />}
+          companyLogo={<MazeIcon />}
           companyName="Company Name #2"
           testimonial="Working with [Your Company Name] was a game-changer for our
               business. They took the time to understand our unique needs and
@@ -50,7 +50,7 @@ const Tesitmonials = () => {
         </div>
         <div id="item3" className="carousel-item w-full">
           <Testimonial
-          companyLogo={<FlaskIcon />}
+          companyLogo={<MazeIcon />}
           companyName="Company Name #3"
           testimonial="Working with [Your Company Name] was a game-changer for our
               business. They took the time to understand our unique needs and
@@ -66,7 +66,7 @@ const Tesitmonials = () => {
         </div>
         <div id="item4" className="carousel-item w-full">
           <Testimonial
-          companyLogo={<FlaskIcon />}
+          companyLogo={<MazeIcon />}
           companyName="Company Name #4"
           testimonial="Working with [Your Company Name] was a game-changer for our
               business. They took the time to understand our unique needs and
@@ -85,7 +85,7 @@ const Tesitmonials = () => {
         <a href="#item1" className="btn btn-lg">
           <div className="flex items-center gap-2">
             <div className="w-12 h-12">
-              <FlaskIcon />
+              <MazeIcon />
             </div>
             <span className="text-xl font-bold">KPInc</span>
           </div>
@@ -93,7 +93,7 @@ const Tesitmonials = () => {
         <a href="#item2" className="btn btn-lg">
           <div className="flex items-center gap-2">
             <div className="w-12 h-12">
-              <FlaskIcon />
+              <MazeIcon />
             </div>
             <span className="text-xl font-bold">Ugh</span>
           </div>
@@ -101,7 +101,7 @@ const Tesitmonials = () => {
         <a href="#item3" className="btn btn-lg">
           <div className="flex items-center gap-2">
             <div className="w-12 h-12">
-              <FlaskIcon />
+              <MazeIcon />
             </div>
             <span className="text-xl font-bold">RBI</span>
           </div>
@@ -109,7 +109,7 @@ const Tesitmonials = () => {
         <a href="#item4" className="btn btn-lg">
           <div className="flex items-center gap-2">
             <div className="w-12 h-12">
-              <FlaskIcon />
+              <MazeIcon />
             </div>
             <span className="text-xl font-bold">TMRA</span>
           </div>

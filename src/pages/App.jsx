@@ -12,12 +12,12 @@ function App() {
     <>
       <Hero />
       <Features />
-      <Values />
+      {/* <Values /> */}
       {/* <Tesitmonials /> */}
       <SectionWrapper >
         <div className="flex flex-col gap-8 justify-center items-center text-center">
-          <GradientTitle title="See what we have been up to." textSize="lg" fontWeight="medium" />
-          <Link to={'/portfolio'} className="bg-primary rounded-lg p-4 text-black">Portfolio</Link>
+          <GradientTitle title="Want a sneak peak?" textSize="lg" fontWeight="medium" />
+          <Link to={'/portfolio'} className="btn btn-primary rounded-lg p-4">Challenges</Link>
         </div>
       </SectionWrapper>
       <CallToAction />
