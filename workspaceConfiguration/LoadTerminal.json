@@ -1,0 +1,30 @@
+{
+  "version": "1.2.1",
+  "groups": [
+    {
+      "name": "Run: Start Vite Environment",
+      "description": "Start application and watchers",
+      "enabled": true,
+      "terminals": [
+        {
+          "name": "vite-dev",
+          "path": ".",
+          "cmd": ["yarn dev"],
+          "num": 0
+        },
+        {
+          "name": "TW-Watcher",
+          "path": ".",
+          "cmd": ["yarn tailwindcss -i ./src/styles/editindex.css -o ./src/styles/staticindex.css --watch"],
+          "num": 0
+        },
+        {
+          "name": "manual-term",
+          "path": ".",
+          "cmd": ["echo Run a command here"],
+          "num": 0
+        }
+      ]
+    }
+  ]
+}
