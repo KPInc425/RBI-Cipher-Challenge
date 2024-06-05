@@ -23,7 +23,7 @@ const ThemeController = ({theme, handleThemeChange}) => {
     <div className="dropdown mb-72" onClick={handleThemeMenuClick}>
       <div tabIndex={0} role="button" className="btn m-1">
         {(theme == "default") || (theme == "dark") || (theme == "light") ? (
-          "Theme"
+          <p className="hidden xl:block">Theme</p>
         ) : (
           <span>{theme.charAt(0).toUpperCase() + theme.slice(1)}</span>
         )}
