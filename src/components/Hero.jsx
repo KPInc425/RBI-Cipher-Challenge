@@ -18,7 +18,7 @@ const Hero = () => {
           <div className="badge badge-lg h-12 badge-outline p-4 rounded-lg font-semibold">Code Crusaders</div>
           <GradientTitle title="Decipher the past, forge the future" />
           <p className="mb-5">{heroTexts[Math.floor(Math.random() * heroTexts.length)]}</p>
-          <button className="btn btn-primary w-1/3">Start Cracking</button>
+          <button className="btn btn-primary w-1/3" onClick={() => document.getElementById("contact").scrollIntoView({behavior: 'smooth'}) }>Start Cracking</button>
         </div>
         <div className="relative bg-[radial-gradient(ellipse_at_center,#ffffff_0%,oklch(var(--p))_20%,#ffffff00_60%);] w-full h-full drop-shadow-[0_0_50px_oklch(var(--nc))]">
           <img src="./BG2.jpg" alt="Brainstorming" className="mask mask-squircle w-full h-full mix-blend-multiply" />
