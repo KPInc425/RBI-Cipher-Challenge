@@ -22,7 +22,7 @@ const router = createBrowserRouter([
         element: <App />,
       },
       {
-        path: "/portfolio",
+        path: "/challenges",
         element: <PortFolio />,
       },
       {

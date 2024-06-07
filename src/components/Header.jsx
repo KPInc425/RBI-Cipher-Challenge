@@ -52,7 +52,7 @@ const MenuOptions = () => {
         </details>
       </li> */}
       <li>
-        <Link to={"/portfolio"} onClick={handleMenuItemClick}>
+        <Link to={"/challenges"} onClick={handleMenuItemClick}>
           Challenges
         </Link>
       </li>

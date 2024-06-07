@@ -7,16 +7,6 @@ import featureData from "../../data/featureData";
 const Features = () => {
   return (
     <SectionWrapper>
-      <div className="flex flex-col gap-4 justify-center items-center mb-16">
-        <SectionBadge title="Features" />
-        <div className="max-w-screen-lg mx-auto">
-          <GradientTitle
-            title="Sharpen Your Coding Edge with Engaging Challenges!"
-            textSize="lg"
-            fontWeight="medium"
-          />
-        </div>
-      </div>
       <div className="flex flex-col gap-24">
         {featureData.map((feature, index) => (
           <Feature
