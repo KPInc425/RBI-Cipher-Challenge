@@ -1,3 +1,5 @@
+import {process} from "process";
+
 const sendMail = async ({name, email, subject, message}) => {
   const WEB3FORMS_ACCESS_KEY = process.env.WEB3FORMS_ACCESS_KEY;
   const response = await fetch("https://api.web3forms.com/submit", {

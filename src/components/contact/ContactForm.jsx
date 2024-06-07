@@ -32,7 +32,7 @@ const ContactForm = ({showForm, setShowForm, setToasterText, handleSuccessToaste
         handleSuccessToaster()
         setShowForm(!showForm)
       } else {
-        setToasterText(`Failed to send email. ${results.body.message}`)
+        setToasterText(`Failed to send email. ${results.message}`)
         handleErrorToaster();
       }
     } catch (err) {
