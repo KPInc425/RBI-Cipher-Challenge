@@ -5158,6 +5158,14 @@ html {
     top: 0.75rem;
   }
 
+  .xl\:right-4 {
+    right: 1rem;
+  }
+
+  .xl\:top-2 {
+    top: 0.5rem;
+  }
+
   .xl\:order-1 {
     order: 1;
   }

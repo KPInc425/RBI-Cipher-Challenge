@@ -6,7 +6,7 @@ import { Outlet } from 'react-router-dom'
 
 function MainLayout() {
   const [count, setCount] = useState(0)
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "default");
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "business");
 
   const handleThemeChange = (e) => {
     console.log(e);
