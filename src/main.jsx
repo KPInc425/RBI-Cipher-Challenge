@@ -9,8 +9,8 @@ import './styles/staticindex.css'
 import ErrorPage from './pages/ErrorPage.jsx';
 import MainLayout from './layouts/MainLayout.jsx';
 import AboutUs from './pages/AboutUs.jsx';
-import PortFolio from './pages/Portfolio.jsx';
 import Contact from './pages/Contact.jsx';
+import Challenges from './pages/Challenges.jsx';
 
 const router = createBrowserRouter([
   {
@@ -23,7 +23,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/challenges",
-        element: <PortFolio />,
+        element: <Challenges />,
       },
       {
         path: "/aboutus",

@@ -1,6 +1,6 @@
 import MazeIcon from "../icons/MazeIcon";
 import Project from "./Project";
-import projectData from "../../data/projects";
+import projectData from "../../data/projectsData";
 
 const ProjectCarousel = () => {
 
