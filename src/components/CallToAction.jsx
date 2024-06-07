@@ -5,19 +5,38 @@ import SectionWrapper from "./shared/SectionWrapper";
 
 const CallToAction = () => {
   const [showForm, setShowForm] = useState(true);
-  // const successToasterRef = useRef < ToasterHandle > null;
-  // const errorToasterRef = useRef < ToasterHandle > null;
+  const [showToasterSuccess, setShowToasterSuccess] = useState(false);
+  const [showToasterError, setShowToasterError] = useState(false);
   const [toasterText, setToasterText] = useState("");
 
   const handleSuccessToaster = () => {
-    // successToasterRef.current?.publish();
+    setShowToasterSuccess(true);
+    setTimeout(() => {
+      setShowToasterSuccess(false);
+      setToasterText("");
+    }, 3000);
   };
   const handleErrorToaster = () => {
-    // errorToasterRef.current?.publish();
+    setShowToasterError(true);
+    setTimeout(() => {
+      setShowToasterError(false);
+      setToasterText("");
+    }, 3000);
   };
 
   return (
     <SectionWrapper additionalClasses="bg-base-200">
+      <div className="toast toast-top toast-center">
+        {showToasterSuccess && (
+          <div className="alert alert-success">
+            <span className="font-semibold text-success-content">{toasterText}</span>
+          </div>)}
+        {showToasterError && (
+          <div className=" alert alert-error">
+            <span className="font-semibold text-error-content">{toasterText}</span>
+          </div>
+        )}
+      </div>
       <div
         id="contact"
         className="grid xl:grid-cols-2 text-start overflow-hidden"
