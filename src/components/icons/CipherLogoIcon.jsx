@@ -1,6 +1,6 @@
 const CipherLogoIcon = () => (
   <svg
-    viewBox="0 0 108.35764 32.59798"
+    viewBox="0 0 118.35764 32.59798"
     version="1.1"
     id="svg1"
     xmlSpace="preserve"
@@ -28,7 +28,7 @@ const CipherLogoIcon = () => (
       >
         <tspan x="330.00818" y="286.53973" id="tspan2">
           <tspan style={{fill:"currentColor"}} id="tspan1">
-            CIPHER&#10;
+            CODING&#10;
           </tspan>
         </tspan>
         <tspan x="350.09304" y="305.20639" id="tspan4">

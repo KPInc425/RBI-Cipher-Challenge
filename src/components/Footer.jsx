@@ -42,7 +42,7 @@ const Footer = ({ theme, handleThemeChange }) => {
             <RBIIcon />
           </div>
           <p>
-            RobotBuildersInc. <br />
+          <a href="https://www.robotbuildersinc.com">RobotBuildersInc.</a> <br />
             Providing reliable tech since 2006
           </p>
         </aside>
