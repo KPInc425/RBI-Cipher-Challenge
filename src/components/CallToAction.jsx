@@ -26,14 +26,19 @@ const CallToAction = () => {
 
   return (
     <SectionWrapper additionalClasses="bg-base-200">
-      <div className="toast toast-top toast-center">
+      <div className="toast toast-top toast-center whitespace-normal sm:whitespace-nowrap w-full md:w-fit max-w-[90%] -translate-x-[53%]">
         {showToasterSuccess && (
           <div className="alert alert-success">
-            <span className="font-semibold text-success-content">{toasterText}</span>
-          </div>)}
+            <span className="font-semibold text-success-content">
+              {toasterText}
+            </span>
+          </div>
+        )}
         {showToasterError && (
           <div className=" alert alert-error">
-            <span className="font-semibold text-error-content">{toasterText}</span>
+            <span className="font-semibold text-error-content">
+              {toasterText}
+            </span>
           </div>
         )}
       </div>
