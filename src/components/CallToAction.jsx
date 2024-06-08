@@ -43,7 +43,7 @@ const CallToAction = () => {
       >
         <div className={`flex flex-col gap-8 justify-center items-center text-center xl:text-start xl:items-start ${!showForm && "order-2"} xl:order-1`}>
           <GradientTitle
-            title="Ready to test your mind and see how you do?"
+            title="Request Information"
             textSize="xl"
             fontWeight="medium"
           />

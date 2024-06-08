@@ -1,4 +1,5 @@
 import MazeIcon from "../components/icons/MazeIcon";
+import CipherLogoIcon from "../components/icons/CipherLogoIcon";
 
 const featureData = [
   {  
@@ -17,18 +18,19 @@ const featureData = [
   },
   {  
     title: "Event Enhancement",
-    subTitle: "Unlocking Secrets and Elevating Your Experience",
+    subTitle: "",
     image: "./Feature1.jpg",
     description: "Integrate our programming challenges into your events, creating memorable experiences that culminate in a high-stakes finale among the top performers.",
     logo: <MazeIcon />,
   },
   {  
-    title: "Comprehensive Materials",
-    subTitle: "A Compendium of Knowledge, for your next event.",
+    title: "Comprehensive Program",
+    subTitle: "",
     image: "./Feature1.jpg",
-    description: "Receive detailed sales materials, summaries of each challenge, and transparent pricing information to help you make an informed decision.",
+    description: "Receive detailed hosting materials, communication templates, participant links (online) or .zip files (offline) for each stage of your event",
     logo: <MazeIcon />,
   },
+
   // {  
   //   title: "Blazor Development",
   //   subTitle: "Full-Stack .NET Applications",

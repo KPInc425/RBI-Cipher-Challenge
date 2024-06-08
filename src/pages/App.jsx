@@ -10,12 +10,12 @@ function App() {
   return (
     <>
       <Hero />
-      <SectionBanner title="Engage Your Development Teams with Exciting Coding Challenges!" />
+      <SectionBanner title="Fun for them, easy for you" />
       <Pitch />
-      <SectionBanner title="What We Offer" />
+      <SectionBanner title="The Coding Challenge" />
       <FeaturesSimple />
-      <SectionBanner title="How it's served" />
-      <Deliverables />
+      {/* <SectionBanner title="How it's served" /> */}
+      {/* <Deliverables /> */}
       {/* <Values /> */}
       {/* <Tesitmonials /> */}
       <SectionBanner title="Interested?" />
