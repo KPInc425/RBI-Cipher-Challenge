@@ -1,7 +1,7 @@
 import GradientTitle from "./shared/GradientTitle";
 
 const heroTexts = [
-  "Use any programming language, simple algorithm and puzzles for any skill-level.  Fun solo, or as part of an event.  Supports an endless number of players."  
+  "Use any programming language, simple algorithms and puzzles for every skill-level.  Fun solo, or as part of an event.  Supports an endless number of players."  
 ];
 
 
