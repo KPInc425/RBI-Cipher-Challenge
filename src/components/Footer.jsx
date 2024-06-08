@@ -2,7 +2,7 @@ import MazeIcon from "./icons/MazeIcon";
 import RBIIcon from "./icons/RBIIcon";
 import ThemeController from "./shared/ThemeController";
 
-const Footer = ({theme, handleThemeChange}) => {
+const Footer = ({ theme, handleThemeChange }) => {
   return (
     <div className="bg-base-300">
       {/* <footer className="footer relative p-10 text-base-content container mx-auto">
@@ -32,7 +32,10 @@ const Footer = ({theme, handleThemeChange}) => {
       </footer> */}
       <footer className="footer px-10 py-4 border-t text-base-content border-base-300 container mx-auto">
         <div className="absolute top-1 right-4 xl:right-4 xl:top-2 h-full">
-          <ThemeController theme={theme} handleThemeChange={handleThemeChange} />
+          <ThemeController
+            theme={theme}
+            handleThemeChange={handleThemeChange}
+          />
         </div>
         <aside className="items-center grid-flow-col">
           <div className="h-12 w-12">
@@ -45,37 +48,39 @@ const Footer = ({theme, handleThemeChange}) => {
         </aside>
         <nav className="md:place-self-center md:justify-self-end">
           <div className="grid grid-flow-col gap-4">
-            <a>
+            <a href="https://www.linkedin.com/groups/14472221/">
               <svg
+                className="w-6 h-6"
+                aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
+                fill="currentColor"
                 viewBox="0 0 24 24"
-                className="fill-current"
               >
-                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+                <path
+                  fillRule="evenodd"
+                  d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z"
+                  clipRule="evenodd"
+                />
+                <path d="M7.2 8.809H4V19.5h3.2V8.809Z" />
               </svg>
             </a>
-            <a>
+            <a href="https://www.facebook.com/groups/thecodingchallengedotcom">
               <svg
+                className="w-6 h-6"
+                aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
+                fill="currentColor"
                 viewBox="0 0 24 24"
-                className="fill-current"
               >
-                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
-              </svg>
-            </a>
-            <a>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                className="fill-current"
-              >
-                <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+                <path
+                  fillRule="evenodd"
+                  d="M13.135 6H15V3h-1.865a4.147 4.147 0 0 0-4.142 4.142V9H7v3h2v9.938h3V12h2.021l.592-3H12V6.591A.6.6 0 0 1 12.592 6h.543Z"
+                  clipRule="evenodd"
+                />
               </svg>
             </a>
           </div>
