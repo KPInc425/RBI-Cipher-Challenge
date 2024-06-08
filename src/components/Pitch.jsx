@@ -4,7 +4,8 @@ const Pitch = () => {
   return (
     <SectionWrapper>
       <div className="flex flex-col gap-4 text-start">
-        <p>
+        <p><span className="font-bold text-2xl">Engage Your Development Teams with Exciting Coding Challenges!</span></p>
+        <p>        
           <span className="font-bold text-2xl">Are you passionate</span> about fostering collaboration and problem-solving
           skills within your software delivery teams? Do you manage a vibrant
           community where hundreds or even thousands of developers could benefit
@@ -20,6 +21,12 @@ const Pitch = () => {
           puzzles, are crafted to test and expand the problem-solving capabilities
           of your developers, making them an ideal addition to any team-building
           or community event.
+        </p>
+        <p>
+          <span className="font-bold text-2xl">Online and Offline options</span> allow the general user or
+          smaller organization an opportunity to get up and running quickly and affordably while providing 
+          the larger organization a simple path through security requirements as our offline edition does not 
+          require any external or internal servers, links, or hosting.
         </p>
       </div>
     </SectionWrapper>
