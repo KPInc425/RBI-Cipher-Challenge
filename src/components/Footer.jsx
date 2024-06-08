@@ -40,7 +40,7 @@ const Footer = ({theme, handleThemeChange}) => {
           </div>
           <p>
             RobotBuildersInc. <br />
-            Providing reliable tech since 2016
+            Providing reliable tech since 2006
           </p>
         </aside>
         <nav className="md:place-self-center md:justify-self-end">

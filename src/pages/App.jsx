@@ -1,14 +1,10 @@
 import Hero from "../components/Hero";
-import Features from "../components/features/Features";
-import Values from "../components/values/Values";
-import Tesitmonials from "../components/testimonials/Testimonials";
 import CallToAction from "../components/CallToAction";
-import GradientTitle from "../components/shared/GradientTitle";
 import SectionWrapper from "../components/shared/SectionWrapper";
-import { Link } from "react-router-dom";
 import SectionBanner from "../components/shared/SectionBanner";
 import Pitch from "../components/Pitch";
 import Deliverables from "../components/Deliverables";
+import FeaturesSimple from "../components/features/FeaturesSimple";
 
 function App() {
   return (
@@ -17,7 +13,7 @@ function App() {
       <SectionBanner title="Engage Your Development Teams with Exciting Coding Challenges!" />
       <Pitch />
       <SectionBanner title="What We Offer" />
-      <Features />
+      <FeaturesSimple />
       <SectionBanner title="How it's served" />
       <Deliverables />
       {/* <Values /> */}
