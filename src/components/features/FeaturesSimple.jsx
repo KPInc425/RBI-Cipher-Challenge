@@ -4,7 +4,7 @@ import SectionWrapper from "../shared/SectionWrapper";
 const FeaturesSimple = () => {
   return (
     <SectionWrapper>
-      <div className="grid lg:grid-cols-2 lg:text-start">
+      <div className="grid lg:grid-cols-2 lg:text-start scroll-slidein-right">
         {featureData.map((feature, index) => {
           return (
             <div

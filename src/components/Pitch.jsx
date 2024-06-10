@@ -3,7 +3,7 @@ import SectionWrapper from "./shared/SectionWrapper";
 const Pitch = () => {
   return (
     <SectionWrapper>
-      <div className="flex flex-col gap-4 text-start">
+      <div className="flex flex-col gap-4 text-start scroll-slidein-left">
         <p><span className="font-bold text-2xl">Engage Your Development Teams with Exciting Coding Challenges!</span></p>
         <p>        
           <span className="font-bold text-2xl">Are you passionate</span> about fostering collaboration and problem-solving

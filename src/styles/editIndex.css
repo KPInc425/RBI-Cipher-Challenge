@@ -1,3 +1,87 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .scroll-watcher {
+    scale: 0 1;
+    transform-origin: left;
+    animation: scroll-watcher linear;
+    animation-timeline: scroll();
+  }
+  
+  @keyframes scroll-watcher {
+    to { scale: 1 1;}
+  }
+  .hero-img-container {
+    scale: 0.8; 
+    opacity: 0;
+  }
+
+  .fade-in {
+    opacity: 0;
+    scale: 0.8;
+    transition: opacity 0.5s ease-in, scale 0.5s ease-in;
+  }
+
+  .fade-in.loaded {
+    opacity: 1;
+    scale: 1;
+  }
+
+  .scroll-fadein {
+    opacity: 0;
+    scale: 0.8;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: entry 10% contain 25%;
+  }
+
+  .scroll-fadeout {
+    animation: fade-out linear forwards;
+    animation-timeline: view();
+    animation-range: exit -200px;
+  }
+  
+  .scroll-scale-up {
+    animation: scale-up linear forwards;
+    animation-timeline: view();
+    animation-range: entry 10% contain 25%;
+  }
+
+  .scroll-slidein-left {
+    animation: slide-in-left linear forwards;
+    animation-timeline: view();
+    animation-range: entry -300px;
+  }
+
+  .scroll-slidein-right {
+    animation: slide-in-right linear forwards;
+    animation-timeline: view();
+    animation-range: entry -300px;
+  }
+  
+  @keyframes fade-in {
+    to { scale: 1; opacity: 1; }
+  }
+
+  @keyframes fade-out {
+    to { opacity: 0; scale: 0 }
+  }
+
+  @keyframes slide-in-left {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+  }
+
+  @keyframes slide-in-right {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+  }
+
+  @keyframes scale-up {
+    from { transform: scale(0.8); }
+    to { transform: scale(1); }
+  }
+}

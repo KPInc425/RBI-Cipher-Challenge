@@ -5,7 +5,6 @@ import LightDarkToggle from '../components/shared/LightDarkToggle'
 import { Outlet } from 'react-router-dom'
 
 function MainLayout() {
-  const [count, setCount] = useState(0)
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "business");
 
   const handleThemeChange = (e) => {
@@ -28,12 +27,9 @@ function MainLayout() {
 
   return (
     <>
-      <div className='absolute right-4 top-24 z-[1]'>
-        <LightDarkToggle theme={theme} handleThemeChange={handleThemeChange} />
-      </div>
-      <Header />
+      <Header theme={theme} handleThemeChange={handleThemeChange} />
       <Outlet />
-      <Footer theme={theme} handleThemeChange={handleThemeChange} />
+      <Footer />
     </>
   )
 }

@@ -2,7 +2,7 @@ import MazeIcon from "./icons/MazeIcon";
 import RBIIcon from "./icons/RBIIcon";
 import ThemeController from "./shared/ThemeController";
 
-const Footer = ({ theme, handleThemeChange }) => {
+const Footer = () => {
   return (
     <div className="bg-base-300">
       {/* <footer className="footer relative p-10 text-base-content container mx-auto">
@@ -31,12 +31,6 @@ const Footer = ({ theme, handleThemeChange }) => {
         </nav>
       </footer> */}
       <footer className="footer px-10 py-4 border-t text-base-content border-base-300 container mx-auto">
-        <div className="absolute top-1 right-4 xl:right-4 xl:top-2 h-full">
-          <ThemeController
-            theme={theme}
-            handleThemeChange={handleThemeChange}
-          />
-        </div>
         <aside className="items-center grid-flow-col">
           <div className="h-12 w-12">
             <RBIIcon />

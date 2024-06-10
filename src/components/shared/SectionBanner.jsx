@@ -2,7 +2,7 @@ import bgImage from "../../assets/BG2.jpg";
 
 const SectionBanner = ({ title = "" }) => {
   return (
-    <div className={"hero h-40 bg-bottom"} style={{
+    <div className={"hero h-40 bg-bottom scroll-fadein"} style={{
       backgroundImage:
         `url(${bgImage})`,
     }}>

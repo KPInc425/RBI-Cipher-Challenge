@@ -20,7 +20,7 @@ const ThemeController = ({theme, handleThemeChange}) => {
   };
 
   return (
-    <div className="dropdown mb-72" onClick={handleThemeMenuClick}>
+    <div className="dropdown" onClick={handleThemeMenuClick}>
       <div tabIndex={0} role="button" className="btn m-1">
         {(theme == "default") || (theme == "dark") || (theme == "light") ? (
           <p className="hidden xl:block">Theme</p>
