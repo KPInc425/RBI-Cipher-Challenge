@@ -20,7 +20,7 @@ function App() {
       {/* <Tesitmonials /> */}
       <SectionBanner title="Interested?" />
       <SectionWrapper>
-        <p className="text-center xl:text-start scroll-scale-up">
+        <p className="text-center xl:text-start scroll-scale-up px-4">
           <span className="font-bold text-2xl">Are you ready to elevate</span>{" "}
           your next event or team-building activity? Fill out the form below to
           receive the official sales materials, a comprehensive summary of each

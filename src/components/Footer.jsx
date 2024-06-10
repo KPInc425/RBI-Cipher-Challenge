@@ -31,16 +31,16 @@ const Footer = () => {
         </nav>
       </footer> */}
       <footer className="footer px-10 py-4 border-t text-base-content border-base-300 container mx-auto">
-        <aside className="items-center grid-flow-col">
+        <aside className="items-center flex flex-col md:flex-row w-full">
           <div className="h-12 w-12">
             <RBIIcon />
           </div>
-          <p>
-          <a href="https://www.robotbuildersinc.com">RobotBuildersInc.</a> <br />
-            Providing reliable tech since 2006
+          <p className="text-center md:text-start">
+            <a href="https://www.robotbuildersinc.com">RobotBuildersInc.</a> <br />
+              Providing reliable tech since 2006
           </p>
         </aside>
-        <nav className="md:place-self-center md:justify-self-end">
+        <nav className="md:place-self-center md:justify-self-end w-full md:w-auto justify-center">
           <div className="grid grid-flow-col gap-4">
             <a href="https://www.linkedin.com/groups/14472221/">
               <svg

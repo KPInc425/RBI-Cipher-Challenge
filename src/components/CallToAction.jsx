@@ -68,7 +68,7 @@ const CallToAction = () => {
             />
           </div>
         ) : (
-          <div className="flex justify-center xl:justify-self-end items-center order-1 xl:order-2 mb-4 xl:mb-0 w-full px-4">
+          <div className="flex justify-center xl:justify-self-end items-center order-1 xl:order-2 mb-4 xl:mb-0 w-full max-w-[100vw] px-4">
             <ContactForm
               showForm={showForm}
               setShowForm={setShowForm}

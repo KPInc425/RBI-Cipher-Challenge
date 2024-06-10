@@ -82,17 +82,19 @@ const ContactForm = ({showForm, setShowForm, setToasterText, handleSuccessToaste
         <input type="email" name="email" id="email" className="input input-primary w-full" required />
         <label htmlFor="message">Message</label>
         <textarea name="message" id="message" rows={6} className="textarea textarea-primary w-full"/>   
-        <div className="flex gap-4 items-center justify-end w-full">
+        <div className="flex flex-col xl:flex-row gap-4 items-center justify-end w-full">
           <HCaptcha
             sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"
             reCaptchaCompat={false}
             onVerify={onHCaptchaChange} 
           />  
-          <button className="btn btn-primary"
-            type='submit' 
-          >
-            Send Message</button>
-          <button className="btn btn-secondary" onClick={() => setShowForm(!showForm)}>Cancel</button>
+          <div className="flex gap-4">
+            <button className="btn btn-primary"
+              type='submit'
+            >
+              Send Message</button>
+            <button className="btn btn-secondary" onClick={() => setShowForm(!showForm)}>Cancel</button>
+          </div>
         </div>
       </form>
     </>
