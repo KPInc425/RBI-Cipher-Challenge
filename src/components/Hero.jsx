@@ -27,7 +27,7 @@ const Hero = () => {
         </div>
         <div className={loaded ? "fade-in loaded" : "fade-in"}>
           <div className={`scroll-fadeout relative bg-[radial-gradient(ellipse_at_center,#ffffff_0%,oklch(var(--p))_20%,#ffffff00_60%);] w-full h-full drop-shadow-[0_0_50px_oklch(var(--nc))]`}>
-            <img src="./BG2.jpg" alt="Brainstorming" className="mask mask-squircle w-full h-full mix-blend-multiply" />
+            <img src="./tcc-hero-image.jpg" alt="Brainstorming" className="mask mask-squircle w-full h-full mix-blend-multiply" />
           </div>
         </div>
       </div>

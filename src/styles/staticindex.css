@@ -4604,24 +4604,12 @@ html {
   position: relative;
 }
 
-.right-4 {
-  right: 1rem;
-}
-
 .right-8 {
   right: 2rem;
 }
 
 .top-0 {
   top: 0px;
-}
-
-.top-1 {
-  top: 0.25rem;
-}
-
-.top-24 {
-  top: 6rem;
 }
 
 .top-8 {
@@ -4692,10 +4680,6 @@ html {
 
 .mb-5 {
   margin-bottom: 1.25rem;
-}
-
-.mb-72 {
-  margin-bottom: 18rem;
 }
 
 .mt-12 {
@@ -5204,10 +5188,6 @@ html {
   padding-top: 2rem;
 }
 
-.pr-4 {
-  padding-right: 1rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -5362,7 +5342,7 @@ html {
   .fade-in {
     opacity: 0;
     scale: 0.8;
-    transition: opacity 0.5s ease-in, scale 0.5s ease-in;
+    transition: opacity 1s ease-in, scale 1s ease-in;
   }
 
   .fade-in.loaded {
@@ -5494,16 +5474,16 @@ html {
     flex-direction: row;
   }
 
+  .lg\:p-0 {
+    padding: 0px;
+  }
+
   .lg\:p-12 {
     padding: 3rem;
   }
 
   .lg\:p-4 {
     padding: 1rem;
-  }
-
-  .lg\:p-0 {
-    padding: 0px;
   }
 
   .lg\:text-start {
@@ -5522,14 +5502,6 @@ html {
 }
 
 @media (min-width: 1280px) {
-  .xl\:right-4 {
-    right: 1rem;
-  }
-
-  .xl\:top-2 {
-    top: 0.5rem;
-  }
-
   .xl\:order-1 {
     order: 1;
   }
