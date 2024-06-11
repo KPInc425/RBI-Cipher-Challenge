@@ -4682,6 +4682,10 @@ html {
   margin-top: 2rem;
 }
 
+.-ml-8 {
+  margin-left: -2rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -5424,6 +5428,14 @@ html {
 }
 
 @media (min-width: 768px) {
+  .md\:m-0 {
+    margin: 0px;
+  }
+
+  .md\:ml-0 {
+    margin-left: 0px;
+  }
+
   .md\:w-auto {
     width: auto;
   }
@@ -5461,6 +5473,16 @@ html {
 
   .md\:text-start {
     text-align: start;
+  }
+
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 

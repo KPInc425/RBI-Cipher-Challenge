@@ -8,7 +8,7 @@ const SectionBanner = ({ title = "" }) => {
     }}>
       <div className="hero-overlay bg-opacity-60"></div>
       <div className="hero-content text-center text-neutral-content">
-        <p className="text-xl xl:text-5xl font-bold text-balance">{title}</p>
+        <p className="text-2xl md:text-3xl xl:text-5xl font-bold text-balance">{title}</p>
       </div>
     </div>
   );
