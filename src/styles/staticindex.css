@@ -5118,6 +5118,11 @@ html {
   padding-right: 4rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -5299,6 +5304,12 @@ html {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+@font-face {
+  font-family: 'Anton';
+
+  src: url('../fonts/Anton-Regular.ttf');
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .scroll-watcher {
     scale: 0 1;
@@ -5441,6 +5452,11 @@ html {
   .md\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .md\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .md\:text-start {

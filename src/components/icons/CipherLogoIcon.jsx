@@ -9,8 +9,8 @@ const CipherLogoIcon = () => (
   >
     <defs id="defs1">
       <rect
-        x="202.87653"
-        y="263.16531"
+        x="203"
+        y="300"
         width="360.77573"
         height="98.567368"
         id="rect1"
@@ -24,7 +24,7 @@ const CipherLogoIcon = () => (
         xmlSpace="preserve"
         transform="matrix(0.69738571,0,0,0.56776962,-146.66882,-31.183068)"
         id="text1"
-        style={{fontStyle:"normal",fontVariant:"normal",fontWeight:"normal",fontStretch:"normal",fontSize:"37.3333px",lineHeight:"0.5",fontFamily:"Impact",inkscapeFontSpecification:"Impact",textAlign:"center",letterSpacing:"0px",wordSpacing:"0px",whiteSpace:"pre",shapeInside:"url(#rect1)",opacity:"0.8",fill:"#008208",strokeWidth:"5"}}
+        style={{fontStyle:"normal",fontVariant:"normal",fontWeight:"normal",fontStretch:"normal",fontSize:"37.3333px",lineHeight:"0.5",fontFamily:"Impact, Anton",inkscapeFontSpecification:"Impact",textAlign:"center",letterSpacing:"0px",wordSpacing:"0px",whiteSpace:"pre",shapeInside:"url(#rect1)",opacity:"0.8",fill:"#008208",strokeWidth:"5"}}
       >
         <tspan x="330.00818" y="286.53973" id="tspan2">
           <tspan style={{fill:"currentColor"}} id="tspan1">
