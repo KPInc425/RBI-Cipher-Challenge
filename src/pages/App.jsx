@@ -12,7 +12,7 @@ function App() {
       <Hero />
       <SectionBanner title="Fun for them, easy for you" />
       <Pitch />
-      <SectionBanner title="The Coding Challenge" />
+      <SectionBanner title="The Coding Challenges" />
       <FeaturesSimple />
       {/* <SectionBanner title="How it's served" /> */}
       {/* <Deliverables /> */}
@@ -22,7 +22,7 @@ function App() {
       <SectionWrapper>
         <p className="text-center xl:text-start scroll-scale-up px-4">
           <span className="font-bold text-2xl">Are you ready to elevate</span>{" "}
-          your next event or team-building activity? Fill out the form below to
+          your developers experience?  Fill out the form below to
           receive the official sales materials, a comprehensive summary of each
           of the challenges, and our competitive pricing
         </p>
