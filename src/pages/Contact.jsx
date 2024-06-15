@@ -4,9 +4,7 @@ const Contact = () => {
   return (
     <SectionWrapper>
       <h1>Contact</h1>
-      <p>Email: john@robotbuildersinc.com</p>
-      <p>Phone: 555-555-5555</p>
-      <p>Address: 42 Wallaby Way, Sydney, Australia</p>
+      <p>Email: sales@robotbuildersinc.com</p>
       <div>
           <a href="https://www.facebook.com/RobotBuildersInc" target="_blank">Facebook</a>
       </div>

@@ -3,7 +3,7 @@ import GradientTitle from "../components/shared/GradientTitle";
 import SectionBadge from "../components/shared/SectionBadge";
 import SectionWrapper from "../components/shared/SectionWrapper"
 
-const Challenges = () => {
+const ChallengesPage = () => {
   return(
     <SectionWrapper>
       <div className="flex flex-col gap-4 justify-center items-center mb-16">
@@ -15,4 +15,4 @@ const Challenges = () => {
   )
 }
 
-export default Challenges;
+export default ChallengesPage;

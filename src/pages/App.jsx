@@ -5,6 +5,8 @@ import SectionBanner from "../components/shared/SectionBanner";
 import Pitch from "../components/Pitch";
 import Deliverables from "../components/Deliverables";
 import FeaturesSimple from "../components/features/FeaturesSimple";
+import ProjectCarousel from "../components/projects/ProjectCarousel";
+import Challenges from "../components/Challenges";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
       {/* <SectionBanner title="How it's served" /> */}
       {/* <Deliverables /> */}
       {/* <Values /> */}
+      <SectionBanner title="Multiple events worth of content" />
+      <Challenges />
       {/* <Tesitmonials /> */}
       <SectionBanner title="Interested?" />
       <SectionWrapper>

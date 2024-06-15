@@ -10,7 +10,7 @@ import ErrorPage from './pages/ErrorPage.jsx';
 import MainLayout from './layouts/MainLayout.jsx';
 import AboutUs from './pages/AboutUs.jsx';
 import Contact from './pages/Contact.jsx';
-import Challenges from './pages/Challenges.jsx';
+import Challenges from './pages/ChallengesPage.jsx';
 
 const router = createBrowserRouter([
   {
