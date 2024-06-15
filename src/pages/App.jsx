@@ -8,7 +8,7 @@ import FeaturesSimple from "../components/features/FeaturesSimple";
 import ProjectCarousel from "../components/projects/ProjectCarousel";
 import Challenges from "../components/Challenges";
 
-function App() {
+function App() {  
   return (
     <>
       <Hero />

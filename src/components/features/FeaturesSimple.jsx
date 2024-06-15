@@ -1,10 +1,25 @@
 import featureData from "../../data/featureData";
 import SectionWrapper from "../shared/SectionWrapper";
+import ReactGA from "react-ga4";
 
 const FeaturesSimple = () => {
+
+  const tellGoogle = () => {        
+    ReactGA.event({
+      category: "page-scroll",
+      action: "Features Simple Action",
+      label: "Features Simple Label", // optional
+      value: 4, // optional, must be a number
+      nonInteraction: false, // optional, true/false
+      transport: "xhr", // optional, beacon/xhr/image
+    }); 
+    console.log('We hit the hit yo!');
+  }
+
+
   return (
     <SectionWrapper>
-      <div className="grid lg:grid-cols-2 lg:text-start scroll-slidein-right px-4">
+      <div className="grid lg:grid-cols-2 lg:text-start scroll-slidein-right px-4" onAnimationEnd={tellGoogle}>
         {featureData.map((feature, index) => {
           return (
             <div
