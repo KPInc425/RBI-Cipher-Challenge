@@ -21,13 +21,7 @@ const Challenges = ({ SendToGaIfNotSentYet }) => {
     <SectionWrapper>
       <div
         ref={challengesRef}
-        className="flex flex-col gap-4 text-start scroll-slidein-top px-4"
-        onAnimationEnd={() => SendToGaIfNotSentYet(
-          "page scroll",
-          "Scroll to Challenges",
-          4
-        )}
-      >
+        className="flex flex-col gap-4 text-start scroll-slidein-top px-4">      
         <p>
           <span className="font-bold text-2xl">
             We specialize in preparing these programs
