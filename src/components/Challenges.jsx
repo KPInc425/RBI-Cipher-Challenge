@@ -1,11 +1,28 @@
+import { useEffect, useRef } from "react";
 import SectionWrapper from "./shared/SectionWrapper";
+import useIntersection from "../hooks/useIntersection";
 
 const Challenges = ({ SendToGaIfNotSentYet }) => {
+  const challengesRef = useRef(null);
+  const isVisible = useIntersection(challengesRef, "0px");
+
+  useEffect(() => {
+    if (isVisible) {
+      console.log("Challenges: Intersection Observer is visible");
+      SendToGaIfNotSentYet(
+        "page scroll",
+        "Scroll to Challenges",
+        4
+      )
+    }
+  }, [SendToGaIfNotSentYet, isVisible]);
+
   return (
     <SectionWrapper>
       <div
+        ref={challengesRef}
         className="flex flex-col gap-4 text-start scroll-slidein-top px-4"
-        onAnimationEnd={SendToGaIfNotSentYet(
+        onAnimationEnd={() => SendToGaIfNotSentYet(
           "page scroll",
           "Scroll to Challenges",
           4

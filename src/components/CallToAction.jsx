@@ -1,13 +1,28 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import ContactForm from "./contact/ContactForm";
 import GradientTitle from "./shared/GradientTitle";
 import SectionWrapper from "./shared/SectionWrapper";
+import useIntersection from "../hooks/useIntersection";
 
 const CallToAction = ({ SendToGaIfNotSentYet }) => {
   const [showForm, setShowForm] = useState(true);
   const [showToasterSuccess, setShowToasterSuccess] = useState(false);
   const [showToasterError, setShowToasterError] = useState(false);
   const [toasterText, setToasterText] = useState("");
+
+  const callToActionRef = useRef(null);
+  const isVisible = useIntersection(callToActionRef, "0px");
+
+  useEffect(() => {
+    if (isVisible) {
+      console.log("CallToAction: Intersection Observer is visible");
+      SendToGaIfNotSentYet(
+        "page scroll",
+        "Scroll to Call To Action",
+        6
+      )
+    }
+  }, [SendToGaIfNotSentYet, isVisible]);
 
   const handleSuccessToaster = () => {
     setShowToasterSuccess(true);
@@ -27,13 +42,7 @@ const CallToAction = ({ SendToGaIfNotSentYet }) => {
   return (
     <SectionWrapper additionalClasses="bg-base-200">
       <div
-        className="toast toast-top toast-center whitespace-normal sm:whitespace-nowrap w-full md:w-fit max-w-[90%] -translate-x-[53%]"
-        onAnimationEnd={SendToGaIfNotSentYet(
-          "page scroll",
-          "Scroll to Call To Action",
-          6
-        )}
-      >
+        className="toast toast-top toast-center whitespace-normal sm:whitespace-nowrap w-full md:w-fit max-w-[90%] -translate-x-[53%]">
         {showToasterSuccess && (
           <div className="alert alert-success">
             <span className="font-semibold text-success-content">
@@ -50,6 +59,7 @@ const CallToAction = ({ SendToGaIfNotSentYet }) => {
         )}
       </div>
       <div
+        ref={callToActionRef}
         id="contact"
         className="grid xl:grid-cols-2 text-start overflow-hidden"
       >

@@ -1,18 +1,29 @@
+import { useEffect, useRef } from "react";
 import featureData from "../../data/featureData";
 import SectionWrapper from "../shared/SectionWrapper";
-import ReactGA from "react-ga4";
+import useIntersection from "../../hooks/useIntersection";
 
 const FeaturesSimple = ({ SendToGaIfNotSentYet }) => {
+
+  const featuresRef = useRef(null);
+  const isVisible = useIntersection(featuresRef, "0px");
+
+  useEffect(() => {
+    if (isVisible) {
+      console.log("FeaturesSimple: Intersection Observer is visible");
+      SendToGaIfNotSentYet(
+        "page scroll",
+        "Scroll to Features",
+        3
+      )
+    }
+  }, [SendToGaIfNotSentYet, isVisible]);
+
   return (
     <SectionWrapper>
       <div
-        className="grid lg:grid-cols-2 lg:text-start scroll-slidein-right px-4"
-        onAnimationEnd={SendToGaIfNotSentYet(
-          "page scroll",
-          "Scroll to Features",
-          3
-        )}
-      >
+        ref={featuresRef}
+        className="grid lg:grid-cols-2 lg:text-start scroll-slidein-right px-4">
         {featureData.map((feature, index) => {
           return (
             <div

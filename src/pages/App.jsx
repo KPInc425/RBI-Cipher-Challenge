@@ -14,9 +14,9 @@ function App() {
   const [hasSentList, setHasSentList] = useState([]);
   const SendToGaIfNotSentYet = (category, action, value) => {
     if (!hasSentList.includes(action)) {
-      debugger;
+      // debugger;
       setHasSentList([...hasSentList, action]);
-
+      console.log("Firing GA event");
       ReactGA.event({
         category: category,
         action: action,
