@@ -37,9 +37,9 @@ const FeaturesSimple = ({ SendToGaIfNotSentYet }) => {
                   <div className="h-14 w-14">{feature.logo}</div>
                 )}
 
-                <span className="font-bold lg:text-start text-xl lg:text-3xl text-balance">
+                <h4 className="font-bold lg:text-start text-xl lg:text-3xl text-balance">
                   {feature.title}
-                </span>
+                </h4>
               </div>
               <p className="text-balance pb-4">{feature.description}</p>
             </div>
