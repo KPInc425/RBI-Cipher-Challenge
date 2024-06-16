@@ -23,9 +23,9 @@ const Challenges = ({ SendToGaIfNotSentYet }) => {
         ref={challengesRef}
         className="flex flex-col gap-4 text-start scroll-slidein-top px-4">      
         <p>
-          <span className="font-bold text-2xl">
+          <h4 className="font-bold text-2xl inline">
             We specialize in preparing these programs
-          </span>{" "}
+          </h4>{" "}
           <span>
             for seamless execution, ensuring your event can focus on delivering
             a remarkable experience without technical or logistical
@@ -33,9 +33,9 @@ const Challenges = ({ SendToGaIfNotSentYet }) => {
           </span>
         </p>
         <p>
-          <span className="font-bold text-2xl">
+          <h4 className="font-bold text-2xl inline">
             The majority of our programs are language-agnostic,
-          </span>{" "}
+          </h4>{" "}
           <span>
             accommodating any programming language and skill level. While most
             are designed for fun and team cohesion, some delve into specific
@@ -44,9 +44,9 @@ const Challenges = ({ SendToGaIfNotSentYet }) => {
           </span>
         </p>
         <p>
-          <span className="font-bold text-2xl">
+          <h4 className="font-bold text-2xl inline">
             Our range of ready-to-run programs includes
-          </span>{" "}
+          </h4>{" "}
           <span>
             engaging challenges like Messages in a Bottle, What in the Dopplar,
             AI Bot Interplays, I am Feeling Pressured, Let's Get Analog, Has

@@ -11,6 +11,7 @@ import MainLayout from './layouts/MainLayout.jsx';
 import AboutUs from './pages/AboutUs.jsx';
 import Contact from './pages/Contact.jsx';
 import Challenges from './pages/ChallengesPage.jsx';
+import WhatTheSonar from './pages/WhatTheSonar.jsx';
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
       {
         path: "/contactus",
         element: <Contact />,
+      },
+      {
+        path: "/what-the-sonar",
+        element: <WhatTheSonar />,
       },
     ]
   },
