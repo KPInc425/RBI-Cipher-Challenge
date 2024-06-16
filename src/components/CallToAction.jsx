@@ -3,7 +3,7 @@ import ContactForm from "./contact/ContactForm";
 import GradientTitle from "./shared/GradientTitle";
 import SectionWrapper from "./shared/SectionWrapper";
 
-const CallToAction = () => {
+const CallToAction = ({ SendToGaIfNotSentYet }) => {
   const [showForm, setShowForm] = useState(true);
   const [showToasterSuccess, setShowToasterSuccess] = useState(false);
   const [showToasterError, setShowToasterError] = useState(false);
@@ -26,7 +26,14 @@ const CallToAction = () => {
 
   return (
     <SectionWrapper additionalClasses="bg-base-200">
-      <div className="toast toast-top toast-center whitespace-normal sm:whitespace-nowrap w-full md:w-fit max-w-[90%] -translate-x-[53%]">
+      <div
+        className="toast toast-top toast-center whitespace-normal sm:whitespace-nowrap w-full md:w-fit max-w-[90%] -translate-x-[53%]"
+        onAnimationEnd={SendToGaIfNotSentYet(
+          "page scroll",
+          "Scroll to Call To Action",
+          6
+        )}
+      >
         {showToasterSuccess && (
           <div className="alert alert-success">
             <span className="font-semibold text-success-content">
@@ -46,14 +53,20 @@ const CallToAction = () => {
         id="contact"
         className="grid xl:grid-cols-2 text-start overflow-hidden"
       >
-        <div className={`flex flex-col gap-8 justify-center items-center text-center xl:text-start xl:items-start ${!showForm && "order-2"} xl:order-1`}>
+        <div
+          className={`flex flex-col gap-8 justify-center items-center text-center xl:text-start xl:items-start ${
+            !showForm && "order-2"
+          } xl:order-1`}
+        >
           <GradientTitle
             title="Request Information"
             textSize="xl"
             fontWeight="medium"
           />
           <button
-            className={`btn btn-primary rounded-lg p-4 ${showForm ? "hidden" : ""}`}
+            className={`btn btn-primary rounded-lg p-4 ${
+              showForm ? "hidden" : ""
+            }`}
             onClick={() => setShowForm(!showForm)}
           >
             Get in touch

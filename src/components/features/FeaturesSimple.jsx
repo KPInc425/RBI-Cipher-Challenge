@@ -2,24 +2,17 @@ import featureData from "../../data/featureData";
 import SectionWrapper from "../shared/SectionWrapper";
 import ReactGA from "react-ga4";
 
-const FeaturesSimple = () => {
-
-  const tellGoogle = () => {        
-    ReactGA.event({
-      category: "page-scroll",
-      action: "Features Simple Action",
-      label: "Features Simple Label", // optional
-      value: 4, // optional, must be a number
-      nonInteraction: false, // optional, true/false
-      transport: "xhr", // optional, beacon/xhr/image
-    }); 
-    console.log('We hit the hit yo!');
-  }
-
-
+const FeaturesSimple = ({ SendToGaIfNotSentYet }) => {
   return (
     <SectionWrapper>
-      <div className="grid lg:grid-cols-2 lg:text-start scroll-slidein-right px-4" onAnimationEnd={tellGoogle}>
+      <div
+        className="grid lg:grid-cols-2 lg:text-start scroll-slidein-right px-4"
+        onAnimationEnd={SendToGaIfNotSentYet(
+          "page scroll",
+          "Scroll to Features",
+          3
+        )}
+      >
         {featureData.map((feature, index) => {
           return (
             <div
@@ -29,11 +22,10 @@ const FeaturesSimple = () => {
               <div
                 className={`flex flex-col items-center lg:flex-row gap-2 max-w-full`}
               >
-                
                 {feature.logo !== null && (
                   <div className="h-14 w-14">{feature.logo}</div>
-                )}                
-                
+                )}
+
                 <span className="font-bold lg:text-start text-xl lg:text-3xl text-balance">
                   {feature.title}
                 </span>
