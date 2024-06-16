@@ -98,6 +98,7 @@ const CallToAction = ({ SendToGaIfNotSentYet }) => {
               setToasterText={setToasterText}
               handleSuccessToaster={handleSuccessToaster}
               handleErrorToaster={handleErrorToaster}
+              SendToGaIfNotSentYet={SendToGaIfNotSentYet} 
             />
           </div>
         )}

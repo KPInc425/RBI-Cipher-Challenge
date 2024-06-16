@@ -3,7 +3,7 @@ import sendMail from "../../../netlify/functions/sendMail.mjs"
 import HCaptcha from "@hcaptcha/react-hcaptcha";
 
 
-const ContactForm = ({showForm, setShowForm, setToasterText, handleSuccessToaster, handleErrorToaster}) => {
+const ContactForm = ({showForm, setShowForm, setToasterText, handleSuccessToaster, handleErrorToaster, SendToGaIfNotSentYet }) => {
   const [showToasterError, setShowToasterError] = useState(false);
   const contactForm = useRef();
 
@@ -23,11 +23,12 @@ const ContactForm = ({showForm, setShowForm, setToasterText, handleSuccessToaste
         return;
     } else {
       console.log('submitted')
-  
+      
+      SendToGaIfNotSentYet("Contact Form", "Action Contact Form Submitted", 10);
+
       const nameInput = e.target.elements.namedItem('name')
       const subjectData = `TheCodingChallenge: ${nameInput.value} - ${e.target.email.value}`
-      const textData = e.target.message.value
-  
+      const textData = e.target.message.value  
   
       const emailData = {
         name: nameInput.value,
@@ -43,6 +44,7 @@ const ContactForm = ({showForm, setShowForm, setToasterText, handleSuccessToaste
       try {      
         const results = await sendMail(emailData);
         console.log(results);
+
         setToasterText('Email Sent. We will get back to you as soon as possible.')
         // console.log("Response: ", results)
         if (results.success) {
