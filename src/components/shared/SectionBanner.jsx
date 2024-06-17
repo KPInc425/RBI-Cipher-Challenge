@@ -1,4 +1,4 @@
-import bgImage from "../../assets/BG2.jpg";
+import bgImage from "../../assets/coding-challenge-section-background.jpg";
 
 const SectionBanner = ({ title = "" }) => {
   return (
