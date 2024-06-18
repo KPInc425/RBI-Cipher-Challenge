@@ -41,12 +41,14 @@ function App() {
       {/* <Tesitmonials /> */}
       <SectionBanner title="Interested?" />
       <SectionWrapper>
-        <p className="text-center xl:text-start scroll-scale-up px-4">
+        <div>
           <h4 className="font-bold text-2xl inline">Are you ready to elevate</h4>{" "}
-          your developers experience? Fill out the form below to receive the
-          official sales materials, a comprehensive summary of each of the
-          challenges, and our competitive pricing
-        </p>
+          <p className="text-center xl:text-start scroll-scale-up inline">
+            your developers experience? Fill out the form below to receive the
+            official sales materials, a comprehensive summary of each of the
+            challenges, and our competitive pricing
+          </p>
+        </div>
       </SectionWrapper>
       {/* <SectionWrapper >
         <div className="flex flex-col gap-8 justify-center items-center text-center">
