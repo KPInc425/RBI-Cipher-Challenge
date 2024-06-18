@@ -164,9 +164,9 @@ const CommunityProgrammingChallenge = () => {
       </SectionWrapper>
       <SectionWrapper additionalClasses="bg-neutral-800">
         <h3 className="mb-2">
-          <p className="text-2xl xl:text-5xl font-semibold mb-4">Join us now</p>
+          <p className="text-2xl xl:text-5xl font-semibold mb-4 text-neutral-content">Join Us Now</p>
         </h3>
-        <p className="xl:text-3xl text-balance px-8">
+        <p className="xl:text-3xl text-balance px-8 text-neutral-content">
           Elevate your coding skills in a community that's passionate about
           problem-solving and innovation. Register for one or more of our weekly
           "Messages in a Bottle" challenges, and get ready to unlock your
