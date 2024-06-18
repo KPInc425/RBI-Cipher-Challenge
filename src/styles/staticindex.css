@@ -4705,6 +4705,11 @@ html {
   margin-bottom: 2rem;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .-ml-8 {
   margin-left: -2rem;
 }
@@ -4731,6 +4736,18 @@ html {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
 .inline-block {
@@ -4972,6 +4989,10 @@ html {
   gap: 2rem;
 }
 
+.gap-16 {
+  gap: 4rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -5074,6 +5095,21 @@ html {
 .bg-neutral {
   --tw-bg-opacity: 1;
   background-color: var(--fallback-n,oklch(var(--n)/var(--tw-bg-opacity)));
+}
+
+.bg-neutral-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
+}
+
+.bg-neutral-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(82 82 82 / var(--tw-bg-opacity));
+}
+
+.bg-neutral-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(38 38 38 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-60 {
@@ -5203,6 +5239,11 @@ html {
   padding-bottom: 2rem;
 }
 
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -5225,6 +5266,10 @@ html {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pr-12 {
+  padding-right: 3rem;
 }
 
 .text-center {
@@ -5268,6 +5313,16 @@ html {
   line-height: 1.75rem;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -5286,6 +5341,10 @@ html {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .text-base-content {
@@ -5666,6 +5725,10 @@ html {
     gap: 5rem;
   }
 
+  .xl\:gap-8 {
+    gap: 2rem;
+  }
+
   .xl\:justify-self-end {
     justify-self: end;
   }
@@ -5716,6 +5779,10 @@ html {
     padding-right: 1rem;
   }
 
+  .xl\:pr-12 {
+    padding-right: 3rem;
+  }
+
   .xl\:text-start {
     text-align: start;
   }
@@ -5752,5 +5819,10 @@ html {
   .xl\:text-9xl {
     font-size: 8rem;
     line-height: 1;
+  }
+
+  .xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
