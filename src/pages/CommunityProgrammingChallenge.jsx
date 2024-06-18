@@ -86,7 +86,7 @@ const CommunityProgrammingChallenge = () => {
         </div>
 
         
-        <Link to={"/#top"} className="btn">
+        <Link to={"/"} className="btn">
           Go Home
         </Link>
       </div>
