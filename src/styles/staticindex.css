@@ -4750,6 +4750,10 @@ html {
   margin-bottom: 0.5rem;
 }
 
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -5244,6 +5248,11 @@ html {
   padding-right: 3rem;
 }
 
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -5697,6 +5706,10 @@ html {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
+  .xl\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .xl\:flex-row {
     flex-direction: row;
   }
@@ -5727,6 +5740,10 @@ html {
 
   .xl\:gap-8 {
     gap: 2rem;
+  }
+
+  .xl\:gap-16 {
+    gap: 4rem;
   }
 
   .xl\:justify-self-end {
@@ -5824,5 +5841,15 @@ html {
   .xl\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .xl\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .xl\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }

@@ -7,11 +7,13 @@ import SignUp from "../components/shared/SignUp";
 const CommunityProgrammingChallenge = () => {
   return (
     <>
-      <div className="text-center mt-12">
-        <GradientTitle title="Join the Ultimate Coding Challenge Live Event" />
-      </div>
       <SectionWrapper>
-        <p className="text-3xl">
+        <div className="text-center mb-12">
+          <p className="text-2xl xl:text-7xl font-semibold mb-4">
+            Join the Ultimate Coding Challenge Live Event
+          </p>
+        </div>
+        <p className="xl:text-3xl px-4">
           Are you ready to put your coding skills to the test and connect with
           like-minded developers? Join our Messages in a Bottle Coding Challenge
           and become part of a vibrant community dedicated to learning,
@@ -20,21 +22,21 @@ const CommunityProgrammingChallenge = () => {
       </SectionWrapper>
       <SectionBanner title="Coding Challenge Event Schedule" />
       <SectionWrapper>
-        <div className="flex flex-col xl:flex-row gap-16">
+        <div className="flex flex-col xl:flex-row gap-16 px-4">
           <div className="xl:text-start">
-            <h2 className="text-4xl">
+            <h2 className="text-2xl xl:text-4xl">
               <GradientTitle title="4" /> Events per Month
             </h2>
-            <p className="text-2xl text-balance">
+            <p className="xl:text-2xl text-balance">
               Engage in weekly "Messages in a Bottle" challenges, each designed
               to test your skills and creativity.
             </p>
           </div>
           <div className="xl:text-start">
-            <h2 className="text-4xl">
+            <h2 className="text-2xl xl:text-4xl">
               <GradientTitle title="3" /> Month Seasons
             </h2>
-            <p className="text-2xl text-balance">
+            <p className="xl:text-2xl text-balance">
               Participate in a series of events over three months, leading up to
               our thrilling semi-finals and finals.
             </p>
@@ -43,12 +45,12 @@ const CommunityProgrammingChallenge = () => {
       </SectionWrapper>
       <SectionBanner title="How the coding challenge works" />
       <SectionWrapper>
-        <div className="flex flex-col xl:flex-row gap-16">
+        <div className="flex flex-col xl:flex-row gap-16 px-4">
           <div className="xl:text-start">
             <h2 className="text-4xl">
-              <GradientTitle textSize="md" title="Sign Up" />
+              <p className="text-2xl xl:text-3xl font-semibold mb-4">Sign Up</p>
             </h2>
-            <p className="text-2xl text-balance">
+            <p className="xl:text-2xl text-balance">
               Pay a small fee to join any of the weekly challenges. Each
               challenge offers unique puzzles and exciting opportunities to
               learn.
@@ -56,27 +58,27 @@ const CommunityProgrammingChallenge = () => {
           </div>
           <div className="xl:text-start">
             <h2 className="text-4xl">
-              <GradientTitle textSize="md" title="Compete" />
+              <p className="text-2xl xl:text-3xl font-semibold mb-4">Compete</p>
             </h2>
-            <p className="text-2xl text-balance">
+            <p className="xl:text-2xl text-balance">
               Take on fun and intellectually stimulating coding challenges,
               ranging from easy to hard.
             </p>
           </div>
           <div className="xl:text-start">
             <h2 className="text-4xl">
-              <GradientTitle textSize="md" title="Advance" />
+              <p className="text-2xl xl:text-3xl font-semibold mb-4">Advance</p>
             </h2>
-            <p className="text-2xl text-balance">
+            <p className="xl:text-2xl text-balance">
               Complete the weekly challenges to qualify for the semi-finals and
               potentially the finals.
             </p>
           </div>
           <div className="xl:text-start">
             <h2 className="text-4xl">
-              <GradientTitle textSize="md" title="Win" />
+              <p className="text-2xl xl:text-3xl font-semibold mb-4">Win</p>
             </h2>
-            <p className="text-2xl text-balance">
+            <p className="xl:text-2xl text-balance">
               Top performers from the semi-finals will compete in the finals for
               the ultimate bragging rights and prizes.
             </p>
@@ -87,9 +89,11 @@ const CommunityProgrammingChallenge = () => {
 
       <SectionWrapper>
         <h3 className="mb-8">
-          <GradientTitle title="Messages in a Bottle" />
+          <p className="text-2xl xl:text-5xl font-semibold mb-4">
+            Messages in a Bottle
+          </p>
         </h3>
-        <p className="text-2xl text-balance">
+        <p className="xl:text-2xl text-balance px-4">
           Embark on a journey to uncover hidden messages. Delve into intricate
           puzzles that will test your ingenuity and creativity. As you decode
           each message, you'll unlock more than just the locks—you'll unlock the
@@ -103,35 +107,44 @@ const CommunityProgrammingChallenge = () => {
         <div className="flex flex-col gap-16">
           <div>
             <h3 className="mb-2">
-              <GradientTitle title="Single Player Mode" />
+              <p className="text-2xl xl:text-5xl font-semibold mb-4">
+                Single Player Mode
+              </p>
             </h3>
-            <p className="text-2xl text-balance">
+            <p className="xl:text-2xl text-balance">
               Solo adventure with narrative-driven experiences or custom play.
             </p>
           </div>
-          <div>
+          <div className="px-4">
             <h3 className="mb-2">
-              <GradientTitle title="Tournament Play" />
+              {/* <GradientTitle title="Tournament Play" /> */}
+              <p className="text-2xl xl:text-5xl font-semibold mb-4">
+                Tournament Play
+              </p>
             </h3>
-            <h4 className="text-xl italic mb-4">Competitive thrills with three distinct modes</h4>
-            <div className="flex justify-center gap-16">
-              <div className="xl:text-start">
-                <h2 className="text-4xl">
-                  <GradientTitle textSize="md" title="Compressed-Time" />
+            <h4 className="text-sm xl:text-lg italic mb-4 px-4">
+              Competitive thrills with three distinct modes
+            </h4>
+            <div className="flex flex-col xl:grid xl:grid-cols-3 justify-center gap-4 xl:gap-16">
+              <div>
+                <h2 className="text-2xl xl:text-3xl">
+                  <p className="font-semibold mb-4">Compressed-Time</p>
                 </h2>
-                <p className="text-2xl text-balance">Fast-paced challenges.</p>
+                <p className="xl:text-2xl text-balance">Fast-paced challenges.</p>
               </div>
-              <div className="xl:text-start">
-                <h2 className="text-4xl">
-                  <GradientTitle textSize="md" title="Endurance" />
+              <div>
+                <h2 className="text-2xl xl:text-3xl">
+                  <p className="font-semibold mb-4">Endurance</p>
                 </h2>
-                <p className="text-2xl text-balance">Extended period challenges.</p>
+                <p className="xl:text-2xl text-balance">
+                  Extended period challenges.
+                </p>
               </div>
-              <div className="xl:text-start">
-                <h2 className="text-4xl">
-                  <GradientTitle textSize="md" title="TheLong-Walk" />
+              <div>
+                <h2 className="text-2xl xl:text-3xl">
+                  <p className="font-semibold mb-4">The Long-Walk</p>
                 </h2>
-                <p className="text-2xl text-balance">
+                <p className="xl:text-2xl text-balance">
                   Relaxed pace for deep engagement.
                 </p>
               </div>
@@ -139,9 +152,11 @@ const CommunityProgrammingChallenge = () => {
           </div>
           <div>
             <h3 className="mb-2">
-              <GradientTitle title="Tournament Hosting" />
+              <p className="text-2xl xl:text-5xl font-semibold mb-4">
+                Tournament Hosting
+              </p>
             </h3>
-            <p className="text-2xl text-balance">
+            <p className="xl:text-2xl text-balance">
               Manage tournaments seamlessly with online or offline editions
             </p>
           </div>
@@ -149,9 +164,9 @@ const CommunityProgrammingChallenge = () => {
       </SectionWrapper>
       <SectionWrapper additionalClasses="bg-neutral-800">
         <h3 className="mb-2">
-          <GradientTitle title="Join us now" />
+          <p className="text-2xl xl:text-5xl font-semibold mb-4">Join us now</p>
         </h3>
-        <p className="text-3xl text-balance">
+        <p className="xl:text-3xl text-balance px-8">
           Elevate your coding skills in a community that's passionate about
           problem-solving and innovation. Register for one or more of our weekly
           "Messages in a Bottle" challenges, and get ready to unlock your
@@ -165,7 +180,7 @@ const CommunityProgrammingChallenge = () => {
       />
 
       <SectionWrapper>
-        <div className="flex flex-col xl:gap-8">
+        <div className="flex flex-col gap-4 xl:gap-8 mb-8">
           <p className="xl:text-2xl px-4 xl:pr-12 xl:text-start">
             Stay tuned for more updates and exciting news about our coding
             challenges. Let’s code, compete, and conquer together!
@@ -174,7 +189,7 @@ const CommunityProgrammingChallenge = () => {
             #MessagesInABottle #CodingChallenge #DevCommunity #TeamBuilding
           </p>
         </div>
-        <Link to={"/"} className="btn">
+        <Link to={"/"} className="btn btn-primary btn-lg">
           Go Home
         </Link>
       </SectionWrapper>

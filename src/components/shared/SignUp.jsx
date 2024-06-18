@@ -72,11 +72,7 @@ const SignUp = (
             !showForm && "order-2"
           } xl:order-1`}
         >
-          <GradientTitle
-            title={signUpTaglineHeader}
-            textSize="xl"
-            fontWeight="medium"
-          />
+          <p className="text-2xl xl:text-5xl font-semibold mb-4 px-4 text-start">{signUpTaglineHeader}</p>
           <p className="xl:text-2xl px-4 xl:pr-12 text-start">{signUpTagline}</p>
           <button
             className={`btn btn-primary rounded-lg p-4 ${
