@@ -12,6 +12,7 @@ import AboutUs from './pages/AboutUs.jsx';
 import Contact from './pages/Contact.jsx';
 import Challenges from './pages/ChallengesPage.jsx';
 import WhatTheSonar from './pages/WhatTheSonar.jsx';
+import CodingChallengeWarmup from './pages/CodingChallengeWarmup.jsx';
 import CommunityProgrammingChallenge from './pages/CommunityProgrammingChallenge.jsx';
 
 const router = createBrowserRouter([
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: "/what-the-sonar",
         element: <WhatTheSonar />,
+      },
+      {
+        path: "/coding-challenge-warmup",
+        element: <CodingChallengeWarmup />,
       },
       {
         path: "/community-programming-challenge",
