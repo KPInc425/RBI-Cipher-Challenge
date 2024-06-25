@@ -13,11 +13,11 @@ const CodingChallengeWarmup = () => {
         <p>Example: "SOS" is encoded as "... --- ..."</p>
         <div>
           <span>Challenge API:</span>
-          <pre><code>/challengeContent</code></pre>          
+          <pre><code>https://thecodingchallenge.com/.netlify/functions/challengeContent</code></pre>          
         </div>
         <div>
           <span>Check Answer API:</span>
-          <pre><code>/challengeContentCheckAnswer</code></pre>          
+          <pre><code>https://thecodingchallenge.com/.netlify/functions/challengeContentCheckAnswer</code></pre>          
         </div>        
         <Link to={"/"} className="btn">Go Home</Link>
       </div>

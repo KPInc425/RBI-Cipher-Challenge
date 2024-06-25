@@ -1,4 +1,4 @@
-import { createClient } from '@supabase/supabase-js'
+//import { createClient } from '@supabase/supabase-js'
 
 const challengeContent = async () => {
   return { "cipherKey": "key 1", "cipherText": "text 1" }
