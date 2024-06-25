@@ -1,2 +1,13 @@
 [functions]
 directory = "api"
+
+[[redirects]]
+from = "/api/challengeContent"
+to = "/.netlify/functions/challengeContent"
+method = "GET"
+
+[[redirects]]
+from = "/api/challengeContentCheckAnswer"
+to = "/.netlify/functions/challengeContentCheckAnswer"
+method = "GET"
+
