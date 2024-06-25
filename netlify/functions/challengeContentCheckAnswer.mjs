@@ -1,7 +1,7 @@
 //import { createClient } from '@supabase/supabase-js'
 
 const challengeContentCheckAnswer = async ({ answerGuess }) => {
-  return answerGuess == "text 1";
+  return Response.json({ "isCorrect": (answerGuess == "text 1")})
 }
 
 export default challengeContentCheckAnswer;
