@@ -20,7 +20,9 @@ const Hero = () => {
       <div className="flex flex-col xl:flex-row w-full gap-8">
         <div className="scroll-fadeout max-w-md flex flex-col items-center text-center mx-auto xl:items-start xl:text-start justify-center gap-4">
           
-          <GradientTitle title="Software Developer Coding Challenges" />
+          <h1>
+            <GradientTitle title="Software Developer Coding Challenges" />
+          </h1>
           <p className="mb-5">{heroTexts[Math.floor(Math.random() * heroTexts.length)]}</p>
           <b>Several successful ready to run events in a box</b>
           {/* <button className="btn btn-primary w-1/3" onClick={() => document.getElementById("contact").scrollIntoView({behavior: 'smooth'}) }>Sales Info</button> */}

@@ -27,7 +27,7 @@ const ContactForm = ({showForm, setShowForm, setToasterText, handleSuccessToaste
       SendToGaIfNotSentYet("Contact Form", "Action Contact Form Submitted", 10);
 
       const nameInput = e.target.elements.namedItem('name')
-      const subjectData = `TheCodingChallenge: ${nameInput.value} - ${e.target.email.value}`
+      const subjectData = `TheCodingChallenge Info: ${nameInput.value} - ${e.target.email.value}`
       const textData = e.target.message.value  
   
       const emailData = {

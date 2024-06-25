@@ -3,6 +3,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import LightDarkToggle from '../components/shared/LightDarkToggle'
 import { Outlet } from 'react-router-dom'
+import ScrollToTop from '../components/shared/ScrollToTop'
 
 function MainLayout() {
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "business");
@@ -27,6 +28,7 @@ function MainLayout() {
 
   return (
     <>
+      <ScrollToTop />
       <Header theme={theme} handleThemeChange={handleThemeChange} />
       <Outlet />
       <Footer />
