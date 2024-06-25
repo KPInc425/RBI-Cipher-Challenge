@@ -1,13 +1,8 @@
 [functions]
-directory = "api"
+  directory = "api"
 
 [[redirects]]
-from = "/api/challengeContent"
-to = "/.netlify/functions/challengeContent"
-method = "GET"
-
-[[redirects]]
-from = "/api/challengeContentCheckAnswer"
-to = "/.netlify/functions/challengeContentCheckAnswer"
-method = "GET"
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
 
