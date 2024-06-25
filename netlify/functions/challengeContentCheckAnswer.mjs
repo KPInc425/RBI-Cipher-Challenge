@@ -3,6 +3,6 @@ export default async (event, context) => {
   return Response.json({ "isCorrect": (String(answer).toLowerCase() == String("Amazing job, very well done, your journey has just begun!").toLowerCase())})
 };
 
-export const config: Config = {
+export const config = {
   path: "/api/challengeContentCheckAnswer"
 }
