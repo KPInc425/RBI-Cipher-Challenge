@@ -3,7 +3,7 @@ import sendMail from "../../../netlify/functions/sendMail.mjs"
 import HCaptcha from "@hcaptcha/react-hcaptcha";
 
 
-const ContactForm = ({showForm, setShowForm, setToasterText, handleSuccessToaster, handleErrorToaster, SendToGaIfNotSentYet }) => {
+const ContactForm = ({showForm, setShowForm, setToasterText, handleSuccessToaster, handleErrorToaster, SendToGaIfNotSentYet, emailSubjectDataWording = "TheCodingChallenge Info:" }) => {
   const [showToasterError, setShowToasterError] = useState(false);
   const contactForm = useRef();
 
@@ -27,7 +27,7 @@ const ContactForm = ({showForm, setShowForm, setToasterText, handleSuccessToaste
       SendToGaIfNotSentYet("Contact Form", "Action Contact Form Submitted", 10);
 
       const nameInput = e.target.elements.namedItem('name')
-      const subjectData = `TheCodingChallenge Info: ${nameInput.value} - ${e.target.email.value}`
+      const subjectData = `${emailSubjectDataWording} ${nameInput.value} - ${e.target.email.value}`
       const textData = e.target.message.value  
   
       const emailData = {

@@ -101,6 +101,7 @@ const CallToAction = ({ SendToGaIfNotSentYet }) => {
               handleSuccessToaster={handleSuccessToaster}
               handleErrorToaster={handleErrorToaster}
               SendToGaIfNotSentYet={SendToGaIfNotSentYet} 
+              emailSubjectDataWording="TheCodingChallenge MorsePage:"
             />
           </div>
         )}
