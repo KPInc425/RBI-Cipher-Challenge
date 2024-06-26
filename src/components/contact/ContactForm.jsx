@@ -3,7 +3,7 @@ import sendMail from "../../../netlify/functions/sendMail.mjs"
 import HCaptcha from "@hcaptcha/react-hcaptcha";
 
 
-const ContactForm = ({showForm, setShowForm, setToasterText, handleSuccessToaster, handleErrorToaster, SendToGaIfNotSentYet }) => {
+const ContactForm = ({showForm, setShowForm, setToasterText, handleSuccessToaster, handleErrorToaster }) => {
   const [showToasterError, setShowToasterError] = useState(false);
   const contactForm = useRef();
 
@@ -63,6 +63,7 @@ const ContactForm = ({showForm, setShowForm, setToasterText, handleSuccessToaste
 
   return (
     <>
+          
       <div className="toast toast-top toast-center whitespace-normal sm:whitespace-nowrap w-full md:w-fit max-w-[90%] -translate-x-[53%]">
         {showToasterError && (
           <div className=" alert alert-error">
@@ -77,6 +78,10 @@ const ContactForm = ({showForm, setShowForm, setToasterText, handleSuccessToaste
         onSubmit={handleSubmit} 
         className="flex flex-col gap-2 items-start w-full"
       >
+        <p class="font-medium xl:text-5xl text-3xl">
+          Request Information
+        </p>
+      
         <input type="checkbox" name="botcheck" className="hidden" />
         <label htmlFor="name">Name</label>
         <input name="name" id="name" className="input input-primary w-full" />

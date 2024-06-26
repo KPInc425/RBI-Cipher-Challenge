@@ -103,7 +103,9 @@ const Header = ({theme, handleThemeChange}) => {
   return (
     <header className="py-4 flex justify-between w-full px-2 md:px-4">
       <div className="lg:h-16 lg:w-68 text-primary p-4 lg:p-0">
-        <CipherLogoIcon />
+        <Link to={"/"} className="lg:h-16 lg:w-68 text-primary p-4 lg:p-0">
+          <CipherLogoIcon />
+        </Link>
       </div>
       <div className="flex items-center">
         <ThemeController theme={theme} handleThemeChange={handleThemeChange} />

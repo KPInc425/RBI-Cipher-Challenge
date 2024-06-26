@@ -4,5 +4,6 @@ export default async (event, context) => {
 };
 
 export const config = {
-  path: "/api/challengeContentCheckAnswer"
+  method: "GET",
+  path: "https://rbi-cipher-challenge.netlify.app/api/challengeContentCheckAnswer"
 }

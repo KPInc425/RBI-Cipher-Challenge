@@ -12,10 +12,11 @@ const Pitch2 = () => {
             Morse Code:
           </h4>{" "}
           <p className="inline"></p>
-          <p>Please find a cipherKey and cipherText have been provided at the endpoint below.  Use the key to decrypt the hidden message and test it against the answer api.</p>
-          <p></p>
-          <p>During a competition several different puzzles will be presented and multiple participants can race to complete them before time runs out.</p>
-          <p>We also include a more difficult second datasets for expanded play or to help with tie-breakers</p>
+          <p>Please find a cipher key and cipher text have been provided at the endpoint below.  Use the key to decrypt the hidden message and test it against the answer api.</p>
+          <p> </p>
+          <p>During a competition several different puzzles will be presented and multiple participants can work to complete them before time runs out.</p>
+          <p> </p>
+          <p>If multiple participants are able to solve the same number of puzzles, then a second dataset will be released to race the final distance.</p>
         </div>
 
         <div>
