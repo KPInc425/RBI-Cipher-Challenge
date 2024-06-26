@@ -3,7 +3,7 @@ import sendMail from "../../../netlify/functions/sendMail.mjs"
 import HCaptcha from "@hcaptcha/react-hcaptcha";
 
 
-const ContactForm = ({showForm, setShowForm, setToasterText, handleSuccessToaster, handleErrorToaster }) => {
+const ContactForm = ({showForm, setShowForm, setToasterText, handleSuccessToaster, handleErrorToaster, SendToGaIfNotSentYet }) => {
   const [showToasterError, setShowToasterError] = useState(false);
   const contactForm = useRef();
 
@@ -78,7 +78,7 @@ const ContactForm = ({showForm, setShowForm, setToasterText, handleSuccessToaste
         onSubmit={handleSubmit} 
         className="flex flex-col gap-2 items-start w-full"
       >
-        <p class="font-medium xl:text-5xl text-3xl">
+        <p className="font-medium xl:text-5xl text-3xl">
           Request Information
         </p>
       

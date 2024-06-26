@@ -73,7 +73,7 @@ const CallToAction = ({ SendToGaIfNotSentYet }) => {
             textSize="xl"
             fontWeight="medium"
           /> */}
-          <img src="./i/coding-challenge-cipher (5).jfif" alt="The Coding Challenge Hero2 Banner" className="mask mask-squircle w-full h-full" Style="width: 75%" />
+          <img src="./i/coding-challenge-cipher (5).jfif" alt="The Coding Challenge Hero2 Banner" className="mask mask-squircle w-full h-full" />
           
           <button
             className={`btn btn-primary rounded-lg p-4 ${

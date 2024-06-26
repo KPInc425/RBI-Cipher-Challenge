@@ -39,7 +39,7 @@ const ThemeController = ({theme, handleThemeChange}) => {
       </div>
       <ul
         tabIndex={0}
-        className="dropdown-content z-[1] p-2 shadow-2xl bg-base-300 rounded-box w-fit max-h-48 overflow-y-auto -ml-8 md:ml-0"
+        className="dropdown-content z-[1] p-2 shadow-2xl bg-base-300 rounded-box w-fit max-h-48 overflow-y-auto -ml-12 lg:ml-0"
       >
         <li>
           <input

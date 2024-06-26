@@ -24,14 +24,12 @@ const CodingChallengeWarmup = () => {
   };
 
   return (
-    <SectionWrapper>
-      <div className="h-screen">
+    <>
         <MorseHero />
         <SectionBanner title="A coding challenge warm-up!" />
         <MorsePitch />
         <CallToAction SendToGaIfNotSentYet={SendToGaIfNotSentYet} />
-      </div>
-    </SectionWrapper>
+    </>
   );
 };
 

@@ -4750,6 +4750,10 @@ html {
   margin-top: 2rem;
 }
 
+.-ml-12 {
+  margin-left: -3rem;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -4768,6 +4772,11 @@ html {
 
 .hidden {
   display: none;
+}
+
+.size-6 {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .h-12 {
@@ -4929,10 +4938,6 @@ html {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.flex-row {
-  flex-direction: row;
-}
-
 .flex-col {
   flex-direction: column;
 }
@@ -4997,10 +5002,6 @@ html {
   gap: 2rem;
 }
 
-.gap-3 {
-  gap: 0.75rem;
-}
-
 .overflow-hidden {
   overflow: hidden;
 }
@@ -5015,6 +5016,10 @@ html {
 
 .whitespace-normal {
   white-space: normal;
+}
+
+.whitespace-pre-wrap {
+  white-space: pre-wrap;
 }
 
 .text-balance {
@@ -5577,6 +5582,10 @@ html {
 }
 
 @media (min-width: 1024px) {
+  .lg\:ml-0 {
+    margin-left: 0px;
+  }
+
   .lg\:h-16 {
     height: 4rem;
   }
