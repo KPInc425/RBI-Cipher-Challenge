@@ -4710,8 +4710,8 @@ html {
   margin-bottom: 2rem;
 }
 
-.-ml-8 {
-  margin-left: -2rem;
+.-ml-12 {
+  margin-left: -3rem;
 }
 
 .mb-12 {
@@ -4748,10 +4748,6 @@ html {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.-ml-12 {
-  margin-left: -3rem;
 }
 
 .inline-block {
@@ -4882,10 +4878,6 @@ html {
 
 .w-full {
   width: 100%;
-}
-
-.w-screen {
-  width: 100vw;
 }
 
 .min-w-8 {
@@ -5532,10 +5524,6 @@ html {
 }
 
 @media (min-width: 768px) {
-  .md\:ml-0 {
-    margin-left: 0px;
-  }
-
   .md\:w-auto {
     width: auto;
   }

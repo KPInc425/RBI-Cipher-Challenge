@@ -1,20 +1,35 @@
 import { useEffect, useRef, useState } from "react";
 import GradientTitle from "./shared/GradientTitle";
+import useIntersection from "../hooks/useIntersection";
 
 const heroTexts = [
   "Morse Code is a method used in telecommunication to encode text characters as sequences of dots and dashes. Each character is represented by a unique combination of short and long signals."  
 ];
 
-
-const MorseHero = () => {
+const MorseHero = ({ SendToGaIfNotSentYet }) => {
   const [loaded, setLoaded] = useState(false);
 
+  const morseHeroRef = useRef(null);
+  const isVisible = useIntersection(morseHeroRef, "0px");
+  useEffect(() => {
+    document.title = "Coding Challenge Warmup";
+  }, []);
   useEffect(() => {
       setLoaded(true);
   }, [])
+  
+  useEffect(() => {
+    if (isVisible) {
+      SendToGaIfNotSentYet(
+        "page scroll",
+        "Scroll to MorseHero",
+        3
+      )
+    }
+  }, [SendToGaIfNotSentYet, isVisible]);
 
   return (
-  <div className="hero min-h-screen">
+  <div className="hero min-h-screen" ref={morseHeroRef}>
     <div className="hero-overlay bg-opacity-60"></div>
     <div className="hero-content text-neutral-content w-full py-16">
       <div className="flex flex-col xl:flex-row w-full gap-8">

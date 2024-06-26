@@ -4,7 +4,7 @@ import MorseHero from "../components/MorseHero";
 import MorsePitch from "../components/MorsePitch";
 import SectionBanner from "../components/shared/SectionBanner";
 import CallToAction from "../components/CallToAction";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ReactGA from "react-ga4";
 
 const CodingChallengeWarmup = () => {
@@ -19,13 +19,16 @@ const CodingChallengeWarmup = () => {
         action: action,
         value: value,
       });
-    }
-    console.log("More stuff that is good, but not good");
+    }    
   };
 
+  useEffect(() => {
+    document.title = "Coding Challenge Warmup";
+  }, []);
+    
   return (
     <>
-        <MorseHero />
+        <MorseHero SendToGaIfNotSentYet={SendToGaIfNotSentYet} />
         <SectionBanner title="A coding challenge warm-up!" />
         <MorsePitch />
         <CallToAction SendToGaIfNotSentYet={SendToGaIfNotSentYet} />
