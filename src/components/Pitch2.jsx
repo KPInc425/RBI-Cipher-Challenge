@@ -23,7 +23,7 @@ const Pitch2 = () => {
           <span>Challenge API:</span>
           <pre>
             <code>
-              https://thecodingchallenge.com/api/challengeContent
+              https://thecodingchallenge.com/.netlify/functions/challengeContent
             </code>
           </pre>
         </div>
@@ -31,7 +31,7 @@ const Pitch2 = () => {
           <span>Check Answer API:</span>
           <pre>
             <code>
-              https://thecodingchallenge.com/api/challengeContentCheckAnswer
+              https://thecodingchallenge.com/.netlify/functions/challengeContentCheckAnswer
             </code>
           </pre>
         </div>
