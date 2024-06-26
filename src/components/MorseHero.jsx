@@ -6,7 +6,7 @@ const heroTexts = [
 ];
 
 
-const Hero2 = () => {
+const MorseHero = () => {
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
@@ -39,4 +39,4 @@ const Hero2 = () => {
   );
 };
 
-export default Hero2;
+export default MorseHero;

@@ -1,6 +1,6 @@
 import SectionWrapper from "./shared/SectionWrapper";
 
-const Pitch2 = () => {
+const MorsePitch = () => {
   return (
     <SectionWrapper>
       <div className="flex flex-col gap-4 text-start scroll-slidein-left px-4">
@@ -50,4 +50,4 @@ const Pitch2 = () => {
   );
 };
 
-export default Pitch2;
+export default MorsePitch;

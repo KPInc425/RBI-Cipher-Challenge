@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import SectionWrapper from "../components/shared/SectionWrapper";
-import Hero2 from "../components/Hero2";
-import Pitch2 from "../components/Pitch2";
+import MorseHero from "../components/MorseHero";
+import MorsePitch from "../components/MorsePitch";
 import SectionBanner from "../components/shared/SectionBanner";
 import CallToAction from "../components/CallToAction";
 import { useState } from "react";
@@ -26,9 +26,9 @@ const CodingChallengeWarmup = () => {
   return (
     <SectionWrapper>
       <div className="h-screen">
-        <Hero2 />
+        <MorseHero />
         <SectionBanner title="A coding challenge warm-up!" />
-        <Pitch2 />
+        <MorsePitch />
         <CallToAction SendToGaIfNotSentYet={SendToGaIfNotSentYet} />
       </div>
     </SectionWrapper>
