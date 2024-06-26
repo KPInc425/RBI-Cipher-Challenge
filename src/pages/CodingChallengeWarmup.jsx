@@ -7,7 +7,6 @@ import CallToAction from "../components/CallToAction";
 import { useState } from "react";
 import ReactGA from "react-ga4";
 
-
 const CodingChallengeWarmup = () => {
   const [hasSentList, setHasSentList] = useState([]);
   const SendToGaIfNotSentYet = (category, action, value) => {
@@ -23,17 +22,17 @@ const CodingChallengeWarmup = () => {
     }
     console.log("More stuff that is good, but not good");
   };
-  
+
   return (
     <SectionWrapper>
       <div className="h-screen">
         <Hero2 />
-        <SectionBanner title="A coding challenge warm-up!" SendToGaIfNotSentYet={SendToGaIfNotSentYet} />
-        <Pitch2 />        
+        <SectionBanner title="A coding challenge warm-up!" />
+        <Pitch2 />
         <CallToAction SendToGaIfNotSentYet={SendToGaIfNotSentYet} />
       </div>
     </SectionWrapper>
   );
-}
+};
 
 export default CodingChallengeWarmup;
