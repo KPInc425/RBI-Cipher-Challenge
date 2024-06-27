@@ -13,7 +13,7 @@ import ReactGA from "react-ga4";
 function App() { 
   const [hasSentList, setHasSentList] = useState([]);
   const SendToGaIfNotSentYet = (category, action, value) => {
-    if (!hasSentList.includes(action)) {
+    if (!hasSentList.includes(action) && !location.href.contains("localhost")) {
       // debugger;
       setHasSentList([...hasSentList, action]);
       console.log("Firing GA event");
