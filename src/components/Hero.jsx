@@ -14,9 +14,7 @@ const Hero = () => {
   }, []);
   
   function scrollToBottom() {
-    window.scrollTo({
-      top: 100000,
-      left: 0,
+    document.getElementById("contact").scrollIntoView({
       behavior: "smooth",
     });
   };
