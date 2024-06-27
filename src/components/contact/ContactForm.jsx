@@ -23,8 +23,9 @@ const ContactForm = ({showForm, setShowForm, setToasterText, handleSuccessToaste
         return;
     } else {
       console.log('submitted')
-      
-      SendToGaIfNotSentYet("Contact Form", "Action Contact Form Submitted", 10);
+      if(!location.href.contains("localhost")) {
+        SendToGaIfNotSentYet("Contact Form", "Action Contact Form Submitted", 10);
+      }
 
       const nameInput = e.target.elements.namedItem('name')
       const subjectData = `${emailSubjectDataWording} ${nameInput.value} - ${e.target.email.value}`

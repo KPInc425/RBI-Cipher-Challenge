@@ -9,7 +9,7 @@ const FeaturesSimple = ({ SendToGaIfNotSentYet }) => {
   const isVisible = useIntersection(featuresRef, "0px");
 
   useEffect(() => {
-    if (isVisible) {
+    if (isVisible && !location.href.contains("localhost")) {
       console.log("FeaturesSimple: Intersection Observer is visible");
       SendToGaIfNotSentYet(
         "page scroll",

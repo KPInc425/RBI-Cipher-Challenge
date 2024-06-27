@@ -12,15 +12,17 @@ const MorseHero = ({ SendToGaIfNotSentYet }) => {
 
   const morseHeroRef = useRef(null);
   const isVisible = useIntersection(morseHeroRef, "0px");
+  
   useEffect(() => {
     document.title = "Coding Challenge Warmup";
   }, []);
+  
   useEffect(() => {
       setLoaded(true);
   }, [])
   
   useEffect(() => {
-    if (isVisible) {
+    if (isVisible && !location.href.contains("localhost")) {
       SendToGaIfNotSentYet(
         "page scroll",
         "Scroll to MorseHero",

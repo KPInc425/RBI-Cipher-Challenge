@@ -7,7 +7,7 @@ const Challenges = ({ SendToGaIfNotSentYet }) => {
   const isVisible = useIntersection(challengesRef, "0px");
 
   useEffect(() => {
-    if (isVisible) {
+    if (isVisible && !location.href.contains("localhost")) {
       console.log("Challenges: Intersection Observer is visible");
       SendToGaIfNotSentYet(
         "page scroll",
