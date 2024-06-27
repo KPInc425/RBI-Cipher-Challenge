@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 import GradientTitle from "./shared/GradientTitle";
 import useIntersection from "../hooks/useIntersection";
@@ -41,6 +42,9 @@ const MorseHero = ({ SendToGaIfNotSentYet }) => {
           <p className="mb-5">{heroTexts[Math.floor(Math.random() * heroTexts.length)]}</p>
           <b>Invented by Samuel Morse and Alfred Vail in the early 1840s, Morse Code revolutionized long-distance communication. It was widely used in telegraphy and remains in use in various forms, including amateur radio and aviation.</b>
           <b>"SOS" is encoded as "... --- ..."</b>
+          <Link to={"/"} className="btn btn-primary btn-lg">
+              Return Home
+            </Link>
           {/* <button className="btn btn-primary w-1/3" onClick={() => document.getElementById("contact").scrollIntoView({behavior: 'smooth'}) }>Sales Info</button> */}
         </div>
         <div className={loaded ? "fade-in loaded" : "fade-in"}>

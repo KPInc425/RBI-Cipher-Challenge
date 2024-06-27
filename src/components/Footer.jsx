@@ -30,7 +30,7 @@ const Footer = () => {
           <a className="link link-hover">Cookie policy</a>
         </nav>
       </footer> */}
-      <footer className="footer px-10 py-4 border-t text-base-content border-base-300 container mx-auto">
+      <footer id={"bottom"} className="footer px-10 py-4 border-t text-base-content border-base-300 container mx-auto" >
         <aside className="items-center flex flex-col md:flex-row w-full">
           <div className="h-12 w-12">
             <RBIIcon />
