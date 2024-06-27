@@ -23,7 +23,7 @@ const ContactForm = ({showForm, setShowForm, setToasterText, handleSuccessToaste
         return;
     } else {
       console.log('submitted')
-      if(!location.href.contains("localhost")) {
+      if(!location.href.includes("localhost")) {
         SendToGaIfNotSentYet("Contact Form", "Action Contact Form Submitted", 10);
       }
 

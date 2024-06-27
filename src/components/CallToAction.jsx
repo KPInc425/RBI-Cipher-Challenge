@@ -14,7 +14,7 @@ const CallToAction = ({ SendToGaIfNotSentYet }) => {
   const isVisible = useIntersection(callToActionRef, "0px");
 
   useEffect(() => {
-    if (isVisible && !location.href.contains("localhost")) {
+    if (isVisible && !location.href.includes("localhost")) {
       console.log("CallToAction: Intersection Observer is visible");
       SendToGaIfNotSentYet(
         "page scroll",

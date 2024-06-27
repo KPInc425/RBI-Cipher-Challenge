@@ -22,7 +22,7 @@ const MorseHero = ({ SendToGaIfNotSentYet }) => {
   }, [])
   
   useEffect(() => {
-    if (isVisible && !location.href.contains("localhost")) {
+    if (isVisible && !location.href.includes("localhost")) {
       SendToGaIfNotSentYet(
         "page scroll",
         "Scroll to MorseHero",

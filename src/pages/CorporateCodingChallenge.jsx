@@ -10,10 +10,10 @@ import Challenges from "../components/Challenges";
 import { useState } from "react";
 import ReactGA from "react-ga4";
 
-function App() { 
+function CorporateCodingChallenge() { 
   const [hasSentList, setHasSentList] = useState([]);
   const SendToGaIfNotSentYet = (category, action, value) => {
-    if (!hasSentList.includes(action) && !location.href.contains("localhost")) {
+    if (!hasSentList.includes(action) && !location.href.includes("localhost")) {
       // debugger;
       setHasSentList([...hasSentList, action]);
       console.log("Firing GA event");
@@ -61,5 +61,5 @@ function App() {
   );
 }
 
-export default App;
+export default CorporateCodingChallenge;
 

@@ -10,7 +10,7 @@ import ReactGA from "react-ga4";
 const CodingChallengeWarmup = () => {
   const [hasSentList, setHasSentList] = useState([]);
   const SendToGaIfNotSentYet = (category, action, value) => {
-    if (!hasSentList.includes(action) && !location.href.contains("localhost")) {
+    if (!hasSentList.includes(action) && !location.href.includes("localhost")) {
       // debugger;
       setHasSentList([...hasSentList, action]);
       console.log("Firing GA event");
