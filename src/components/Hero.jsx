@@ -33,9 +33,9 @@ const Hero = () => {
             </p>
             <b>Several successful ready to run events in a box for software engineering managers, community of practice hosts/esses, and corporate event planners. </b>
             <div className="flex gap-4">
-              <Link className="btn btn-primary btn-lg">
-                <span onClick={() => scrollToBottom()}>Request Info</span>
-              </Link>
+              <button className="btn btn-primary btn-lg">
+                <span onClick={() => scrollToBottom({behavior: 'smooth'})}>Request Info</span>
+              </button>
               <Link to={"/coding-challenge-warmup"} className="btn btn-primary btn-lg">
                 See Example
               </Link>

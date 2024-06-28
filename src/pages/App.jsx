@@ -42,7 +42,7 @@ function App() {
       <SectionBanner title="Interested?" />
       <SectionWrapper>
         <div>
-          <h4 id="readyToElevate" className="font-bold text-2xl inline">Are you ready to elevate</h4>{" "}
+          <h4 className="font-bold text-2xl inline">Are you ready to elevate</h4>{" "}
           <p className="text-center xl:text-start scroll-scale-up inline">
             your developers experience? Fill out the form below to receive the
             official sales materials, a comprehensive summary of each of the
