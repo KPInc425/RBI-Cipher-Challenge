@@ -1,21 +1,21 @@
 import { useRef, useState } from "react";
 import sendMail from "../../../netlify/functions/sendMail.mjs"
-import HCaptcha from "@hcaptcha/react-hcaptcha";
+// import HCaptcha from "@hcaptcha/react-hcaptcha";
 
 
 const ContactForm = ({showForm, setShowForm, setToasterText, handleSuccessToaster, handleErrorToaster, SendToGaIfNotSentYet, emailSubjectDataWording = "TheCodingChallenge Info:" }) => {
   const [showToasterError, setShowToasterError] = useState(false);
   const contactForm = useRef();
 
-  const onHCaptchaChange = (token) => {
-    contactForm.current.querySelector('textarea[name=h-captcha-response]').value = token;
-  };
+  // const onHCaptchaChange = (token) => {
+  //   contactForm.current.querySelector('textarea[name=h-captcha-response]').value = token;
+  // };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const hCaptcha = contactForm.current.querySelector('textarea[name=h-captcha-response]').value;
+    const jkapValue = document.querySelector("input[id=jkap]").value;
 
-    if (!hCaptcha) {
+    if (jkapValue != "9") {
         setShowToasterError(true);
         setTimeout(() => {
           setShowToasterError(false);
@@ -69,7 +69,7 @@ const ContactForm = ({showForm, setShowForm, setToasterText, handleSuccessToaste
         {showToasterError && (
           <div className=" alert alert-error">
             <span className="font-semibold text-error-content">
-              Please fill out captcha field
+              Please answer the math question correctly to help us avoid bots.
             </span>
           </div>
         )}
@@ -83,7 +83,7 @@ const ContactForm = ({showForm, setShowForm, setToasterText, handleSuccessToaste
           Request Information
         </p>
       
-        <input type="checkbox" name="botcheck" className="hidden" />
+        {/* <input type="checkbox" name="botcheck" className="hidden" /> */}
         <label htmlFor="name">Name</label>
         <input name="name" id="name" className="input input-primary w-full" />
         <label htmlFor="email">Email*</label>
@@ -91,11 +91,15 @@ const ContactForm = ({showForm, setShowForm, setToasterText, handleSuccessToaste
         <label htmlFor="message">Message</label>
         <textarea name="message" id="message" rows={6} className="textarea textarea-primary w-full"/>   
         <div className="flex flex-col xl:flex-row gap-4 items-center justify-end w-full">
-          <HCaptcha
+          {/* <HCaptcha
             sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"
             reCaptchaCompat={false}
             onVerify={onHCaptchaChange} 
-          />  
+          />   */}
+          <div>
+            <span>What is 4 + 5 please?</span>
+            <input id="jkap" className="input input-primary w-full" required />
+          </div>
           <div className="flex gap-4">
             <button className="btn btn-primary"
               type='submit'

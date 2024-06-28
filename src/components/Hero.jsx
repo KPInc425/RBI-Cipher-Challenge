@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import GradientTitle from "./shared/GradientTitle";
 
 const heroTexts = [
-  "Use any programming language, simple algorithms and puzzles for every skill-level.  Fun solo, or as part of an event.  Supports an endless number of players.",
+  "Built for companies to run internal software developer coding challenges that are fun and accessible to all skill levels, supporting most programming languages, and perfect for very small to very large events. Unlimited participants.",
 ];
 
 const Hero = () => {
@@ -26,12 +26,12 @@ const Hero = () => {
         <div className="flex flex-col xl:flex-row w-full gap-8">
           <div className="scroll-fadeout max-w-md flex flex-col items-center text-center mx-auto xl:items-start xl:text-start justify-center gap-4">
             <h1>
-              <GradientTitle title="Software Developer Coding Challenges" />
+              <GradientTitle title="A series of fun internal events for all of your software developers" />
             </h1>
             <p className="mb-5">
               {heroTexts[Math.floor(Math.random() * heroTexts.length)]}
             </p>
-            <b>Several successful ready to run events in a box</b>
+            <b>Several successful ready to run events in a box for software engineering managers, community of practice hosts/esses, and corporate event planners. </b>
             <div className="flex gap-4">
               <Link className="btn btn-primary btn-lg">
                 <span onClick={() => scrollToBottom()}>Request Info</span>
