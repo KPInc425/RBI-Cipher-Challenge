@@ -14,10 +14,6 @@ const MorseHero = ({ SendToGaIfNotSentYet }) => {
   const isVisible = useIntersection(morseHeroRef, "0px");
   
   useEffect(() => {
-    document.title = "Coding Challenge Warmup";
-  }, []);
-  
-  useEffect(() => {
       setLoaded(true);
   }, [])
   

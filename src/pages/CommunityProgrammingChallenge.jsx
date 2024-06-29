@@ -5,6 +5,11 @@ import SectionBanner from "../components/shared/SectionBanner";
 import SignUp from "../components/shared/SignUp";
 
 const CommunityProgrammingChallenge = () => {
+  
+  useEffect(() => {
+    document.title = "Community Programming Challenge";
+  }, []);
+
   return (
     <>
       <SectionWrapper>
