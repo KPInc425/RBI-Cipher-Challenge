@@ -99,8 +99,7 @@ const CommunityProgrammingChallenge = () => {
               <p className="text-2xl xl:text-3xl font-semibold mb-4">Win</p>
             </h2>
             <p className="xl:text-2xl text-balance">
-              Top performers from the semi-finals will compete in the finals for
-              the ultimate bragging rights and prizes.
+              Top performers from the semi-finals will compete in the finals.
             </p>
           </div>
         </div>
