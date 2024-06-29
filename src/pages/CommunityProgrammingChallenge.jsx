@@ -1,3 +1,4 @@
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import SectionWrapper from "../components/shared/SectionWrapper";
 import GradientTitle from "../components/shared/GradientTitle";
