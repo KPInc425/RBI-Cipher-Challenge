@@ -3,6 +3,7 @@ import ContactForm from "./ContactForm";
 
 const Contact = () => {
   const [showForm, setShowForm] = useState(false);
+  const [actionMessage, setactionMessage] = useState(false);
   // const successToasterRef = useRef < ToasterHandle > null;
   // const errorToasterRef = useRef < ToasterHandle > null;
   const [toasterText, setToasterText] = useState("");
@@ -30,6 +31,7 @@ const Contact = () => {
           </button>
       ) : (
         <ContactForm
+          actionMessage={actionMessage}
           showForm={showForm}
           setShowForm={setShowForm}
           setToasterText={setToasterText}

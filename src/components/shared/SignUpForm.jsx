@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import sendMail from "../../../netlify/functions/sendMail.mjs";
 import HCaptcha from "@hcaptcha/react-hcaptcha";
 

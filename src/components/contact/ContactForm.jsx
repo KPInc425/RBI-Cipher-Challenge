@@ -3,7 +3,7 @@ import sendMail from "../../../netlify/functions/sendMail.mjs"
 // import HCaptcha from "@hcaptcha/react-hcaptcha";
 
 
-const ContactForm = ({showForm, setShowForm, setToasterText, handleSuccessToaster, handleErrorToaster, SendToGaIfNotSentYet, emailSubjectDataWording = "TheCodingChallenge Info:" }) => {
+const ContactForm = ({showForm, setShowForm, setToasterText, handleSuccessToaster, handleErrorToaster, SendToGaIfNotSentYet, actionMessage, emailSubjectDataWording = "TheCodingChallenge Info:" }) => {
   const [showToasterError, setShowToasterError] = useState(false);
   const contactForm = useRef();
 
@@ -24,17 +24,17 @@ const ContactForm = ({showForm, setShowForm, setToasterText, handleSuccessToaste
     } else {
       console.log('submitted')
       if(!location.href.includes("localhost")) {
-        SendToGaIfNotSentYet("Contact Form", "Action Contact Form Submitted", 10);
+        SendToGaIfNotSentYet("Contact Form " + actionMessage, "Action " + actionMessage + " Contact Form Submitted", 10);
       }
 
       const nameInput = e.target.elements.namedItem('name')
       const subjectData = `${emailSubjectDataWording} ${nameInput.value} - ${e.target.email.value}`
-      const textData = e.target.message.value  
+      const textData = ''// e.target.message.value  
   
       const emailData = {
         name: nameInput.value,
         email: e.target.email.value,
-        subject: subjectData,
+        subject: actionMessage + " " + subjectData,
         message: textData,
       }
       
@@ -88,8 +88,8 @@ const ContactForm = ({showForm, setShowForm, setToasterText, handleSuccessToaste
         <input name="name" id="name" className="input input-primary w-full" />
         <label htmlFor="email">Email*</label>
         <input type="email" name="email" id="email" className="input input-primary w-full" required />
-        <label htmlFor="message">Message</label>
-        <textarea name="message" id="message" rows={6} className="textarea textarea-primary w-full"/>   
+        {/* <label htmlFor="message">Message</label>
+        <textarea name="message" id="message" rows={6} className="textarea textarea-primary w-full"/>    */}
         <div className="flex flex-col xl:flex-row gap-4 items-end justify-between w-full">
           {/* <HCaptcha
             sitekey="50b2fe65-b00b-4b9e-ad62-3ba471098be2"
@@ -104,7 +104,7 @@ const ContactForm = ({showForm, setShowForm, setToasterText, handleSuccessToaste
             <button className="btn btn-primary"
               type='submit'
             >
-              Send Message</button>
+              Send</button>
             <button className="btn btn-secondary" onClick={() => setShowForm(!showForm)}>Cancel</button>
           </div>
         </div>

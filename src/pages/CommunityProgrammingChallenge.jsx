@@ -1,9 +1,11 @@
-import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import SectionWrapper from "../components/shared/SectionWrapper";
 import GradientTitle from "../components/shared/GradientTitle";
 import SectionBanner from "../components/shared/SectionBanner";
 import SignUp from "../components/shared/SignUp";
+import CallToAction from "../components/CallToAction";
+import { useEffect, useState } from "react";
+import ReactGA from "react-ga4";
 
 const CommunityProgrammingChallenge = () => {
   
@@ -11,6 +13,18 @@ const CommunityProgrammingChallenge = () => {
     document.title = "Community Programming Challenge";
   }, []);
 
+  const SendToGaIfNotSentYet = (category, action, value) => {
+    if (!hasSentList.includes(action) && !location.href.includes("localhost")) {
+      // debugger;
+      setHasSentList([...hasSentList, action]);
+      console.log("Firing GA event");
+      ReactGA.event({
+        category: category,
+        action: action,
+        value: value,
+      });
+    }
+  }
   return (
     <>
       <SectionWrapper>
@@ -179,11 +193,12 @@ const CommunityProgrammingChallenge = () => {
           potential in our coding competitions!
         </p>
       </SectionWrapper>
-      <SignUp
+      {/* <SignUp
         signUpTaglineHeader="Ready to get started?"
         signUpTagline="Fill out the form to register and receive
         all the necessary details to embark on your coding adventure."
-      />
+      /> */}
+      <CallToAction SendToGaIfNotSentYet={SendToGaIfNotSentYet} actionMessage="Community Programming Challenge" />
 
       <SectionWrapper>
         <div className="flex flex-col gap-4 xl:gap-8 mb-8">

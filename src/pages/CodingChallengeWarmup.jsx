@@ -31,7 +31,7 @@ const CodingChallengeWarmup = () => {
         <MorseHero SendToGaIfNotSentYet={SendToGaIfNotSentYet} />
         <SectionBanner title="A coding challenge warm-up!" />
         <MorsePitch />
-        <CallToAction SendToGaIfNotSentYet={SendToGaIfNotSentYet} />
+        <CallToAction SendToGaIfNotSentYet={SendToGaIfNotSentYet} actionMessage="Coding Challenge Warmup" />
     </>
   );
 };

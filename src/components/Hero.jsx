@@ -39,6 +39,9 @@ const Hero = () => {
               <Link to={"/coding-challenge-warmup"} className="btn btn-primary btn-lg">
                 See Example
               </Link>
+              <Link to={"/community-programming-challenge"} className="btn btn-primary btn-lg">
+                Community Edition
+              </Link>
             </div>
             {/* <button className="btn btn-primary w-1/3" onClick={() => document.getElementById("contact").scrollIntoView({behavior: 'smooth'}) }>Sales Info</button> */}
           </div>

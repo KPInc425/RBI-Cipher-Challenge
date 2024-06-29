@@ -56,7 +56,7 @@ function CorporateCodingChallenge() {
           <Link to={'/challenges'} className="btn btn-primary rounded-lg p-4">Challenges</Link>
         </div>
       </SectionWrapper> */}
-      <CallToAction SendToGaIfNotSentYet={SendToGaIfNotSentYet} />
+      <CallToAction SendToGaIfNotSentYet={SendToGaIfNotSentYet}  actionMessage="Corporate Coding Challenge" />
     </>
   );
 }

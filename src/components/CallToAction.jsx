@@ -4,7 +4,7 @@ import GradientTitle from "./shared/GradientTitle";
 import SectionWrapper from "./shared/SectionWrapper";
 import useIntersection from "../hooks/useIntersection";
 
-const CallToAction = ({ SendToGaIfNotSentYet }) => {
+const CallToAction = ({ SendToGaIfNotSentYet, actionMessage }) => {
   const [showForm, setShowForm] = useState(true);
   const [showToasterSuccess, setShowToasterSuccess] = useState(false);
   const [showToasterError, setShowToasterError] = useState(false);
@@ -101,6 +101,7 @@ const CallToAction = ({ SendToGaIfNotSentYet }) => {
               handleSuccessToaster={handleSuccessToaster}
               handleErrorToaster={handleErrorToaster}
               SendToGaIfNotSentYet={SendToGaIfNotSentYet} 
+              actionMessage={actionMessage}
               emailSubjectDataWording="TheCodingChallenge MorsePage:"
             />
           </div>
