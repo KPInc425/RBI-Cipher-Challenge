@@ -42,7 +42,7 @@ const Footer = () => {
         </aside>
         <nav className="md:place-self-center md:justify-self-end w-full md:w-auto justify-center">
           <div className="grid grid-flow-col gap-4">
-            <a href="https://www.linkedin.com/groups/14472221/">
+            {/* <a href="https://www.linkedin.com/groups/14472221/">
               <svg
                 className="w-6 h-6"
                 aria-hidden="true"
@@ -76,7 +76,7 @@ const Footer = () => {
                   clipRule="evenodd"
                 />
               </svg>
-            </a>
+            </a> */}
           </div>
         </nav>
       </footer>
