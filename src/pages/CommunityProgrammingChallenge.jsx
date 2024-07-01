@@ -12,7 +12,7 @@ const CommunityProgrammingChallenge = () => {
   useEffect(() => {
     document.title = "Community Programming Challenge";
   }, []);
-
+  const [hasSentList, setHasSentList] = useState([]);
   const SendToGaIfNotSentYet = (category, action, value) => {
     if (!hasSentList.includes(action) && !location.href.includes("localhost")) {
       // debugger;
