@@ -202,8 +202,8 @@ const CommunityProgrammingChallenge = () => {
       <SectionWrapper>
         <div className="flex flex-col gap-4 xl:gap-8 mb-8">
           <p className="xl:text-2xl px-4 xl:pr-12 xl:text-start">
-            Stay tuned for more updates and exciting news about our coding
-            challenges. Let’s code, compete, and conquer together!
+            Stay tuned for more updates and exciting news about our coding challenges. 
+            Let’s code, compete, and achieve greatness together!
           </p>
           <p className="text-sm italic xl:text-end">
             #MessagesInABottle #CodingChallenge #DevCommunity #TeamBuilding
